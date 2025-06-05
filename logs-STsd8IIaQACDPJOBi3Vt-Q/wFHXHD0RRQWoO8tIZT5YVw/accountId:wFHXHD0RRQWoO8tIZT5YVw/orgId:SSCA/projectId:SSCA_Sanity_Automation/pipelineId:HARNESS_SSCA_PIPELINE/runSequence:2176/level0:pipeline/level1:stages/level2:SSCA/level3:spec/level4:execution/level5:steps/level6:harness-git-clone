@@ -1,0 +1,25 @@
+{"level":"info","pos":0,"out":"2025/06/04 02:01:47 proto: duplicate proto type registered: PluginSpec\n","time":"2025-06-04T02:01:47.167443767Z","args":null}
+{"level":"info","pos":1,"out":"2025/06/04 02:01:47 proto: duplicate proto type registered: PluginPrivilege\n","time":"2025-06-04T02:01:47.167489811Z","args":null}
+{"level":"info","pos":2,"out":"time=2025-06-04T02:01:47.173Z level=INFO msg=\"clone is disabled for harness plugin\"\n","time":"2025-06-04T02:01:47.17343405Z","args":null}
+{"level":"info","pos":3,"out":"+ git init\n","time":"2025-06-04T02:01:47.646682882Z","args":null}
+{"level":"info","pos":4,"out":"hint: Using 'master' as the name for the initial branch. This default branch name\n","time":"2025-06-04T02:01:47.653165836Z","args":null}
+{"level":"info","pos":5,"out":"hint: is subject to change. To configure the initial branch name to use in all\n","time":"2025-06-04T02:01:47.653180684Z","args":null}
+{"level":"info","pos":6,"out":"hint: of your new repositories, which will suppress this warning, call:\n","time":"2025-06-04T02:01:47.653187407Z","args":null}
+{"level":"info","pos":7,"out":"hint: \n","time":"2025-06-04T02:01:47.653189031Z","args":null}
+{"level":"info","pos":8,"out":"hint: \tgit config --global init.defaultBranch \u003cname\u003e\n","time":"2025-06-04T02:01:47.653190651Z","args":null}
+{"level":"info","pos":9,"out":"hint: \n","time":"2025-06-04T02:01:47.653192022Z","args":null}
+{"level":"info","pos":10,"out":"hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\n","time":"2025-06-04T02:01:47.653192865Z","args":null}
+{"level":"info","pos":11,"out":"hint: 'development'. The just-created branch can be renamed via this command:\n","time":"2025-06-04T02:01:47.653194018Z","args":null}
+{"level":"info","pos":12,"out":"hint: \n","time":"2025-06-04T02:01:47.653194906Z","args":null}
+{"level":"info","pos":13,"out":"hint: \tgit branch -m \u003cname\u003e\n","time":"2025-06-04T02:01:47.653195736Z","args":null}
+{"level":"info","pos":14,"out":"Initialized empty Git repository in /harness/.git/\n","time":"2025-06-04T02:01:47.653770185Z","args":null}
+{"level":"info","pos":15,"out":"+ git config --global --add safe.directory *\n","time":"2025-06-04T02:01:47.653833008Z","args":null}
+{"level":"info","pos":16,"out":"+ git remote add origin https://github.com/repo-posture/test-repo.git\n","time":"2025-06-04T02:01:47.65480596Z","args":null}
+{"level":"info","pos":17,"out":"+ set +x\n","time":"2025-06-04T02:01:47.656223861Z","args":null}
+{"level":"info","pos":18,"out":"+ git fetch --depth=50 origin +refs/heads/main:\n","time":"2025-06-04T02:01:47.656767161Z","args":null}
+{"level":"info","pos":19,"out":"From https://github.com/repo-posture/test-repo\n","time":"2025-06-04T02:01:49.279228931Z","args":null}
+{"level":"info","pos":20,"out":" * branch            main       -\u003e FETCH_HEAD\n","time":"2025-06-04T02:01:49.279282622Z","args":null}
+{"level":"info","pos":21,"out":" * [new branch]      main       -\u003e origin/main\n","time":"2025-06-04T02:01:49.280495464Z","args":null}
+{"level":"info","pos":22,"out":"+ git checkout -b main origin/main\n","time":"2025-06-04T02:01:49.283669337Z","args":null}
+{"level":"info","pos":23,"out":"Switched to a new branch 'main'\n","time":"2025-06-04T02:01:49.302268245Z","args":null}
+{"level":"info","pos":24,"out":"branch 'main' set up to track 'origin/main'.\n","time":"2025-06-04T02:01:49.302278487Z","args":null}

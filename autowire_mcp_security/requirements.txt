@@ -1,0 +1,4 @@
+autowire
+requests
+pydantic
+openai # For LLM integration (can be swapped)

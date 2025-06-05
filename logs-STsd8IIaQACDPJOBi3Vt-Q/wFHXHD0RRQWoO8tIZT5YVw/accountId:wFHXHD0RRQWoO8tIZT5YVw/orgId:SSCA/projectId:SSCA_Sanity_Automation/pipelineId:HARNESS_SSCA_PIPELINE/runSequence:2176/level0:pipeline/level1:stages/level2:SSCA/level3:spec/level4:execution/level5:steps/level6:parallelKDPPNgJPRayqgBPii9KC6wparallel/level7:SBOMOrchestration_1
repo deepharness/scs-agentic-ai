@@ -1,0 +1,20 @@
+{"level":"info","pos":0,"out":"0.39.0: Pulling from gar-prod-setup/harness-public/harness/ssca-cdxgen-plugin\n","time":"2025-06-04T02:01:53.82034233Z","args":null}
+{"level":"info","pos":1,"out":"Digest: sha256:5b93b56e415bc6a3ebba46ceb547d98087082807c6282fe27dd0e2046395b90d\n","time":"2025-06-04T02:02:10.742540474Z","args":null}
+{"level":"info","pos":2,"out":"Status: Downloaded newer image for us-docker.pkg.dev/gar-prod-setup/harness-public/harness/ssca-cdxgen-plugin:0.39.0\n","time":"2025-06-04T02:02:10.829907479Z","args":null}
+{"level":"info","pos":3,"out":"\u001b[32mINF\u001b[0m \u001b[1mplugin execution started\u001b[0m \u001b[36mGOARCH=\u001b[0mamd64 \u001b[36mGOOS=\u001b[0mlinux\n","time":"2025-06-04T02:02:18.562256327Z","args":null}
+{"level":"info","pos":4,"out":"\u001b[32mINF\u001b[0m \u001b[1mcdxgen\u001b[0m \u001b[36mversion=\u001b[0m11.1.10\n","time":"2025-06-04T02:02:19.292649988Z","args":null}
+{"level":"info","pos":5,"out":"\u001b[32mINF\u001b[0m \u001b[1mcosign\u001b[0m \u001b[36mversion=\u001b[0mv2.4.1\n","time":"2025-06-04T02:02:19.315966814Z","args":null}
+{"level":"info","pos":6,"out":"\u001b[32mINF\u001b[0m \u001b[1msbomqs\u001b[0m \u001b[36mversion=\u001b[0mdevel\n","time":"2025-06-04T02:02:19.332384375Z","args":null}
+{"level":"info","pos":7,"out":"\u001b[32mINF\u001b[0m \u001b[1msbom generation started\u001b[0m \u001b[36mformat=\u001b[0mcyclonedx-json \u001b[36msource=\u001b[0m/harness\n","time":"2025-06-04T02:02:19.335989975Z","args":null}
+{"level":"info","pos":8,"out":"\u001b[32mINF\u001b[0m \u001b[1mSbom Destination: harness/sbom/sbom_egwbsQixRp2Z9J_BZsgDAg.json\u001b[0m\n","time":"2025-06-04T02:02:20.430013434Z","args":null}
+{"level":"info","pos":9,"out":"\u001b[32mINF\u001b[0m \u001b[1msbom generation successful\u001b[0m\n","time":"2025-06-04T02:02:20.430037896Z","args":null}
+{"level":"info","pos":10,"out":"\u001b[32mINF\u001b[0m \u001b[1mnormalize sbom started\u001b[0m \u001b[36mrepoURI=\u001b[0mgithub.com/repo-posture/test-repo\n","time":"2025-06-04T02:02:20.430042077Z","args":null}
+{"level":"info","pos":11,"out":"\u001b[1m\u001b[33mWRN\u001b[0m\u001b[0m \u001b[1mNo components found in sbom , Make sure the repository is cloned in /harness directory\u001b[0m\n","time":"2025-06-04T02:02:20.430053987Z","args":null}
+{"level":"info","pos":12,"out":"\u001b[32mINF\u001b[0m \u001b[1mnormalize sbom successful\u001b[0m\n","time":"2025-06-04T02:02:20.430057479Z","args":null}
+{"level":"info","pos":13,"out":"\u001b[32mINF\u001b[0m \u001b[1mstarted\u001b[0m \u001b[36mapi=\u001b[0m\"upload SBOM\"\n","time":"2025-06-04T02:02:20.430302384Z","args":null}
+{"level":"info","pos":14,"out":"\u001b[32mINF\u001b[0m \u001b[1msuccessful\u001b[0m \u001b[36mapi=\u001b[0m\"upload SBOM\" \u001b[36mstatus=\u001b[0m\"201 Created\"\n","time":"2025-06-04T02:02:20.73880189Z","args":null}
+{"level":"info","pos":15,"out":"\u001b[32mINF\u001b[0m \u001b[1mstarted\u001b[0m \u001b[36mapi=\u001b[0m\"save orchestration\"\n","time":"2025-06-04T02:02:20.738847865Z","args":null}
+{"level":"info","pos":16,"out":"\u001b[32mINF\u001b[0m \u001b[1msuccessful\u001b[0m \u001b[36mapi=\u001b[0m\"save orchestration\" \u001b[36mstatus=\u001b[0m\"201 Created\"\n","time":"2025-06-04T02:02:21.124068726Z","args":null}
+{"level":"info","pos":17,"out":"\u001b[32mINF\u001b[0m \u001b[1mstarted\u001b[0m \u001b[36mapi=\u001b[0m\"calculate sbom drift\"\n","time":"2025-06-04T02:02:21.124114Z","args":null}
+{"level":"info","pos":18,"out":"\u001b[32mINF\u001b[0m \u001b[1msuccessful\u001b[0m \u001b[36mapi=\u001b[0m\"calculate sbom drift\" \u001b[36mstatus=\u001b[0m\"200 OK\"\n","time":"2025-06-04T02:02:21.275157479Z","args":null}
+{"level":"info","pos":19,"out":"\u001b[32mINF\u001b[0m \u001b[1mplugin execution completed\u001b[0m\n","time":"2025-06-04T02:02:21.275219108Z","args":null}

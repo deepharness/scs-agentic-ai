@@ -1,0 +1,86 @@
+{"level":"info","pos":0,"out":"latest: Pulling from gar-prod-setup/harness-public/harness/osv-job-runner\n","time":"2025-06-04T02:01:53.818004974Z","args":null}
+{"level":"info","pos":1,"out":"Digest: sha256:8baf874e0ec252869cd4ffa55ec26faea23f16c49cd69cbf388cd3d79e1a6874\n","time":"2025-06-04T02:02:00.187106178Z","args":null}
+{"level":"info","pos":2,"out":"Status: Downloaded newer image for us-docker.pkg.dev/gar-prod-setup/harness-public/harness/osv-job-runner:latest\n","time":"2025-06-04T02:02:00.188346742Z","args":null}
+{"level":"info","pos":3,"out":"python3 -m sto_plugin --run-strategy single-container\n","time":"2025-06-04T02:02:02.221380803Z","args":null}
+{"level":"info","pos":4,"out":"-------------------- STO Plugin [START] --------------------\n","time":"2025-06-04T02:02:02.51728759Z","args":null}
+{"level":"info","pos":5,"out":"STO Plugin [v1.74.0-1746928948] (run_strategy=single-container)\n","time":"2025-06-04T02:02:02.517327521Z","args":null}
+{"level":"info","pos":6,"out":"----------------- CA File Register [START] -----------------\n","time":"2025-06-04T02:02:02.517428107Z","args":null}
+{"level":"info","pos":7,"out":"Looking for certificates in /shared/customer_artifacts/certificates\n","time":"2025-06-04T02:02:02.517437214Z","args":null}
+{"level":"info","pos":8,"out":"---------------- CA Folder Contents [START] ----------------\n","time":"2025-06-04T02:02:02.517579868Z","args":null}
+{"level":"info","pos":9,"out":"total 8\n","time":"2025-06-04T02:02:02.520448717Z","args":null}
+{"level":"info","pos":10,"out":"drwxr-xr-x 2 root root 4096 May 11 01:07 .\n","time":"2025-06-04T02:02:02.520469069Z","args":null}
+{"level":"info","pos":11,"out":"drwxr-xr-x 1 root root 4096 May 11 01:07 ..\n","time":"2025-06-04T02:02:02.520473937Z","args":null}
+{"level":"info","pos":12,"out":"----------------- CA Folder Contents [END] -----------------\n","time":"2025-06-04T02:02:02.520823926Z","args":null}
+{"level":"info","pos":13,"out":"Successfully updated certificates\n","time":"2025-06-04T02:02:02.88908009Z","args":null}
+{"level":"info","pos":14,"out":"------------------ CA File Register [END] ------------------\n","time":"2025-06-04T02:02:02.889156849Z","args":null}
+{"level":"info","pos":15,"out":"----------------- STO Plugin Setup [START] -----------------\n","time":"2025-06-04T02:02:02.889167554Z","args":null}
+{"level":"info","pos":16,"out":"SSL Verification is enabled\n","time":"2025-06-04T02:02:02.891920284Z","args":null}
+{"level":"info","pos":17,"out":"Target scan_type: [repository]\n","time":"2025-06-04T02:02:02.891946073Z","args":null}
+{"level":"info","pos":18,"out":"Target name: [repo-posture/test-repo]\n","time":"2025-06-04T02:02:02.891949719Z","args":null}
+{"level":"info","pos":19,"out":"Target variant: [main]\n","time":"2025-06-04T02:02:02.891952633Z","args":null}
+{"level":"info","pos":20,"out":"Starting setup for product [osv-scanner]\n","time":"2025-06-04T02:02:03.064246683Z","args":null}
+{"level":"info","pos":21,"out":"Found matching product config [('repository', 'default')]\n","time":"2025-06-04T02:02:03.064960147Z","args":null}
+{"level":"info","pos":22,"out":"------------------ STO Plugin Setup [END] ------------------\n","time":"2025-06-04T02:02:03.123250848Z","args":null}
+{"level":"info","pos":23,"out":"----------------- Runner execution [START] -----------------\n","time":"2025-06-04T02:02:03.150309672Z","args":null}
+{"level":"info","pos":24,"out":"File Inventory List (in bytes) - {'wait.sh': 421, 'images': {'Folders': [], 'mock_turtle_1.png': 139100, 'gryphon-2.png': 226475, 'hearts_1.png': 31874, 'dodo.png': 109809, 'mock_turtle_4.png': 104563, 'twiddledum.png': 40312, 'mad_hatter.png': 105558, 'hearts_2.png': 45372, 'banner.png': 1779795, 'hearts_3.png': 17025, 'gryphon-1.png': 132223, 'caterpillar.png': 152444, 'mock_turtle_2.png': 54264, 'cheshire_cat.png': 133289, 'mock_turtle_3.png': 83145, 'white_rabbit.png': 106679, 'diagram.png': 154146}, 'jenkins-agent': {'Folders': [], 'Dockerfile': 1689}, 'solutions': {'Folders': [], 'dormouse.md': 2478, 'hearts.md': 1901, 'twiddledum.md': 1429, 'cheshire-cat.md': 1805, 'gryphon.md': 4674, 'dodo.md': 1475, 'mad-hatter.md': 1256, 'duchess.md': 1914, 'mock-turtle.md': 2704, 'white-rabbit.md': 1535, 'caterpillar.md': 2168}, 'jenkins-server': {'Folders': ['jobdsl'], 'jenkins.yaml': 5077, 'plugins.txt': 2175, 'secrets.properties': 2821, 'Dockerfile': 1324, 'flag5.txt': 36, 'run.sh': 356}, '.circleci': {'Folders': [], 'config.yml': 5572}, 'rename.py': 718, '.github': {'Folders': ['workflows']}, 'prod': {'Folders': [], 'server.crt': 1700, 'sshd_config': 2693, 'Dockerfile': 1249, 'entrypoint.sh': 127, 'reportcov.sh': 163, 'authorized_keys': 553}, 'README.md': 5181, '.git': {'Folders': ['info', 'branches', 'refs', 'hooks', 'logs', 'objects'], 'FETCH_HEAD': 101, 'index': 7647, 'config': 266, 'HEAD': 21, 'description': 73}, 'tests': {'Folders': ['data'], 'test_twiddle.py': 1163, 'test_mad_hatter.py': 924, 'conftest.py': 5485, 'test_hearts.py': 1514, 'test_duchess.py': 590, 'test_caterpillar.py': 2649, 'test_gryphon.py': 2259, 'test_white_rabbit.py': 1208, 'test_mock_turtle.py': 1831, 'test_cheschire_cat.py': 1432, 'pytest.ini': 47, 'test_dodo.py': 843, 'utils.py': 1394, 'test_reportcov_and_dormouse.py': 2310}, '.gitignore': 1934, 'cicd-goat-main.iml': 441}\n","time":"2025-06-04T02:02:03.150917709Z","args":null}
+{"level":"info","pos":25,"out":"-------------- Runner Startup Script [START] ---------------\n","time":"2025-06-04T02:02:03.151691366Z","args":null}
+{"level":"info","pos":26,"out":"--------------- Runner Startup Script [END] ----------------\n","time":"2025-06-04T02:02:03.151738023Z","args":null}
+{"level":"info","pos":27,"out":"Command [ osv-scanner --format sarif --output /tmp/output.json -r /harness ]\n","time":"2025-06-04T02:02:03.151974906Z","args":null}
+{"level":"info","pos":28,"out":"Scanning dir /harness\n","time":"2025-06-04T02:02:03.175755641Z","args":null}
+{"level":"info","pos":29,"out":"Scanning /harness/ at commit 52ae22a7b4624a0d657577ad26ea054c336861cc\n","time":"2025-06-04T02:02:03.175784665Z","args":null}
+{"level":"info","pos":30,"out":"Scan output exists inside runner at: /tmp/output.json writing to /addon/results/mIJqUFwm2fWXFsWx7cxZE8\n","time":"2025-06-04T02:02:03.467874201Z","args":null}
+{"level":"info","pos":31,"out":"------------------ Runner execution [END] ------------------\n","time":"2025-06-04T02:02:03.468075647Z","args":null}
+{"level":"info","pos":32,"out":"------------------ Process Issues [START] ------------------\n","time":"2025-06-04T02:02:03.470493861Z","args":null}
+{"level":"info","pos":33,"out":"Found SARIF results file with version 2.1.0\n","time":"2025-06-04T02:02:03.470513896Z","args":null}
+{"level":"info","pos":34,"out":"Number of raw issues extracted: 0\n","time":"2025-06-04T02:02:03.470521382Z","args":null}
+{"level":"info","pos":35,"out":"Starting issue upload\n","time":"2025-06-04T02:02:03.470525007Z","args":null}
+{"level":"info","pos":36,"out":"Issue upload complete\n","time":"2025-06-04T02:02:03.488869644Z","args":null}
+{"level":"info","pos":37,"out":"------------------- Process Issues [END] -------------------\n","time":"2025-06-04T02:02:03.574367605Z","args":null}
+{"level":"info","pos":38,"out":"Scan Results: {\n","time":"2025-06-04T02:02:03.574408526Z","args":null}
+{"level":"info","pos":39,"out":"    \"jobId\": \"mIJqUFwm2fWXFsWx7cxZE8\",\n","time":"2025-06-04T02:02:03.574412841Z","args":null}
+{"level":"info","pos":40,"out":"    \"status\": \"Succeeded\",\n","time":"2025-06-04T02:02:03.574417209Z","args":null}
+{"level":"info","pos":41,"out":"    \"issuesCount\": 0,\n","time":"2025-06-04T02:02:03.574420468Z","args":null}
+{"level":"info","pos":42,"out":"    \"newIssuesCount\": 0,\n","time":"2025-06-04T02:02:03.574423125Z","args":null}
+{"level":"info","pos":43,"out":"    \"issuesBySeverityCount\": {\n","time":"2025-06-04T02:02:03.574425581Z","args":null}
+{"level":"info","pos":44,"out":"        \"ExternalPolicyFailures\": 0,\n","time":"2025-06-04T02:02:03.574428145Z","args":null}
+{"level":"info","pos":45,"out":"        \"NewCritical\": 0,\n","time":"2025-06-04T02:02:03.574430731Z","args":null}
+{"level":"info","pos":46,"out":"        \"NewHigh\": 0,\n","time":"2025-06-04T02:02:03.57443312Z","args":null}
+{"level":"info","pos":47,"out":"        \"NewMedium\": 0,\n","time":"2025-06-04T02:02:03.574435634Z","args":null}
+{"level":"info","pos":48,"out":"        \"NewLow\": 0,\n","time":"2025-06-04T02:02:03.574438162Z","args":null}
+{"level":"info","pos":49,"out":"        \"NewInfo\": 0,\n","time":"2025-06-04T02:02:03.574440521Z","args":null}
+{"level":"info","pos":50,"out":"        \"Unassigned\": 0,\n","time":"2025-06-04T02:02:03.574442893Z","args":null}
+{"level":"info","pos":51,"out":"        \"NewUnassigned\": 0,\n","time":"2025-06-04T02:02:03.57444567Z","args":null}
+{"level":"info","pos":52,"out":"        \"Critical\": 0,\n","time":"2025-06-04T02:02:03.574448357Z","args":null}
+{"level":"info","pos":53,"out":"        \"High\": 0,\n","time":"2025-06-04T02:02:03.574452177Z","args":null}
+{"level":"info","pos":54,"out":"        \"Medium\": 0,\n","time":"2025-06-04T02:02:03.574454931Z","args":null}
+{"level":"info","pos":55,"out":"        \"Low\": 0,\n","time":"2025-06-04T02:02:03.574457442Z","args":null}
+{"level":"info","pos":56,"out":"        \"Info\": 0,\n","time":"2025-06-04T02:02:03.574459686Z","args":null}
+{"level":"info","pos":57,"out":"        \"Ignored\": 0,\n","time":"2025-06-04T02:02:03.574461967Z","args":null}
+{"level":"info","pos":58,"out":"        \"NewIgnoredCritical\": 0,\n","time":"2025-06-04T02:02:03.574464457Z","args":null}
+{"level":"info","pos":59,"out":"        \"NewIgnoredHigh\": 0,\n","time":"2025-06-04T02:02:03.574466986Z","args":null}
+{"level":"info","pos":60,"out":"        \"NewIgnoredMedium\": 0,\n","time":"2025-06-04T02:02:03.57446954Z","args":null}
+{"level":"info","pos":61,"out":"        \"NewIgnoredLow\": 0,\n","time":"2025-06-04T02:02:03.574471994Z","args":null}
+{"level":"info","pos":62,"out":"        \"NewIgnoredInfo\": 0,\n","time":"2025-06-04T02:02:03.574474381Z","args":null}
+{"level":"info","pos":63,"out":"        \"NewIgnoredUnassigned\": 0,\n","time":"2025-06-04T02:02:03.574478674Z","args":null}
+{"level":"info","pos":64,"out":"        \"IgnoredCritical\": 0,\n","time":"2025-06-04T02:02:03.574499286Z","args":null}
+{"level":"info","pos":65,"out":"        \"IgnoredHigh\": 0,\n","time":"2025-06-04T02:02:03.574504634Z","args":null}
+{"level":"info","pos":66,"out":"        \"IgnoredMedium\": 0,\n","time":"2025-06-04T02:02:03.5745073Z","args":null}
+{"level":"info","pos":67,"out":"        \"IgnoredLow\": 0,\n","time":"2025-06-04T02:02:03.574509891Z","args":null}
+{"level":"info","pos":68,"out":"        \"IgnoredInfo\": 0,\n","time":"2025-06-04T02:02:03.574512292Z","args":null}
+{"level":"info","pos":69,"out":"        \"IgnoredUnassigned\": 0,\n","time":"2025-06-04T02:02:03.574516415Z","args":null}
+{"level":"info","pos":70,"out":"        \"NewOccurrencesCritical\": 0,\n","time":"2025-06-04T02:02:03.574519435Z","args":null}
+{"level":"info","pos":71,"out":"        \"NewOccurrencesHigh\": 0,\n","time":"2025-06-04T02:02:03.574524401Z","args":null}
+{"level":"info","pos":72,"out":"        \"NewOccurrencesMedium\": 0,\n","time":"2025-06-04T02:02:03.574526927Z","args":null}
+{"level":"info","pos":73,"out":"        \"NewOccurrencesLow\": 0,\n","time":"2025-06-04T02:02:03.574529285Z","args":null}
+{"level":"info","pos":74,"out":"        \"NewOccurrencesInfo\": 0,\n","time":"2025-06-04T02:02:03.574531654Z","args":null}
+{"level":"info","pos":75,"out":"        \"NewOccurrencesUnassigned\": 0,\n","time":"2025-06-04T02:02:03.57453408Z","args":null}
+{"level":"info","pos":76,"out":"        \"NewIgnoredOccurrencesCritical\": 0,\n","time":"2025-06-04T02:02:03.574536679Z","args":null}
+{"level":"info","pos":77,"out":"        \"NewIgnoredOccurrencesHigh\": 0,\n","time":"2025-06-04T02:02:03.574539306Z","args":null}
+{"level":"info","pos":78,"out":"        \"NewIgnoredOccurrencesMedium\": 0,\n","time":"2025-06-04T02:02:03.574542113Z","args":null}
+{"level":"info","pos":79,"out":"        \"NewIgnoredOccurrencesLow\": 0,\n","time":"2025-06-04T02:02:03.57454449Z","args":null}
+{"level":"info","pos":80,"out":"        \"NewIgnoredOccurrencesInfo\": 0,\n","time":"2025-06-04T02:02:03.574547124Z","args":null}
+{"level":"info","pos":81,"out":"        \"NewIgnoredOccurrencesUnassigned\": 0\n","time":"2025-06-04T02:02:03.57455142Z","args":null}
+{"level":"info","pos":82,"out":"    }\n","time":"2025-06-04T02:02:03.574554038Z","args":null}
+{"level":"info","pos":83,"out":"}\n","time":"2025-06-04T02:02:03.574556876Z","args":null}
+{"level":"info","pos":84,"out":"fail_on_severity is set to none, but this threshold was not reached.\n","time":"2025-06-04T02:02:03.574655762Z","args":null}
+{"level":"info","pos":85,"out":"--------------------- STO Plugin [END] ---------------------\n","time":"2025-06-04T02:02:03.574665008Z","args":null}

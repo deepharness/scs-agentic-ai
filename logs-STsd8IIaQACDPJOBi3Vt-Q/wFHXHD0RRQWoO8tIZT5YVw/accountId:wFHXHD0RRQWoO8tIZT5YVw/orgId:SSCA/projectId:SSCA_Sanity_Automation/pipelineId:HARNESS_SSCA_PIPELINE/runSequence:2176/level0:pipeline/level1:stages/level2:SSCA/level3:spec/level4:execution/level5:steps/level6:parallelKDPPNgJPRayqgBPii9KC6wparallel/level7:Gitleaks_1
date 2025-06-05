@@ -1,0 +1,926 @@
+{"level":"info","pos":0,"out":"latest: Pulling from gar-prod-setup/harness-public/harness/gitleaks-job-runner\n","time":"2025-06-04T02:01:53.921716663Z","args":null}
+{"level":"info","pos":1,"out":"Digest: sha256:a081015973c1aefaf26b9975573309971d0eb361005b9ae322724c6a2ed057e7\n","time":"2025-06-04T02:02:02.482674679Z","args":null}
+{"level":"info","pos":2,"out":"Status: Downloaded newer image for us-docker.pkg.dev/gar-prod-setup/harness-public/harness/gitleaks-job-runner:latest\n","time":"2025-06-04T02:02:02.483959136Z","args":null}
+{"level":"info","pos":3,"out":"python3 -m sto_plugin --run-strategy single-container\n","time":"2025-06-04T02:02:03.081488348Z","args":null}
+{"level":"info","pos":4,"out":"-------------------- STO Plugin [START] --------------------\n","time":"2025-06-04T02:02:03.37284702Z","args":null}
+{"level":"info","pos":5,"out":"STO Plugin [v1.75.0-1748430652] (run_strategy=single-container)\n","time":"2025-06-04T02:02:03.372875318Z","args":null}
+{"level":"info","pos":6,"out":"----------------- CA File Register [START] -----------------\n","time":"2025-06-04T02:02:03.372928842Z","args":null}
+{"level":"info","pos":7,"out":"Looking for certificates in /shared/customer_artifacts/certificates\n","time":"2025-06-04T02:02:03.372950537Z","args":null}
+{"level":"info","pos":8,"out":"---------------- CA Folder Contents [START] ----------------\n","time":"2025-06-04T02:02:03.373097088Z","args":null}
+{"level":"info","pos":9,"out":"total 8\n","time":"2025-06-04T02:02:03.375776557Z","args":null}
+{"level":"info","pos":10,"out":"drwxr-xr-x 2 root root 4096 May 28 05:12 .\n","time":"2025-06-04T02:02:03.375793373Z","args":null}
+{"level":"info","pos":11,"out":"drwxr-xr-x 1 root root 4096 May 28 05:13 ..\n","time":"2025-06-04T02:02:03.375797076Z","args":null}
+{"level":"info","pos":12,"out":"----------------- CA Folder Contents [END] -----------------\n","time":"2025-06-04T02:02:03.376134199Z","args":null}
+{"level":"info","pos":13,"out":"Successfully updated certificates\n","time":"2025-06-04T02:02:03.726245538Z","args":null}
+{"level":"info","pos":14,"out":"------------------ CA File Register [END] ------------------\n","time":"2025-06-04T02:02:03.72627607Z","args":null}
+{"level":"info","pos":15,"out":"----------------- STO Plugin Setup [START] -----------------\n","time":"2025-06-04T02:02:03.726319493Z","args":null}
+{"level":"info","pos":16,"out":"SSL Verification is enabled\n","time":"2025-06-04T02:02:03.72697156Z","args":null}
+{"level":"info","pos":17,"out":"Target scan_type: [repository]\n","time":"2025-06-04T02:02:03.728997108Z","args":null}
+{"level":"info","pos":18,"out":"Target name: [repo-posture/test-repo]\n","time":"2025-06-04T02:02:03.729009001Z","args":null}
+{"level":"info","pos":19,"out":"Target variant: [main]\n","time":"2025-06-04T02:02:03.729069249Z","args":null}
+{"level":"info","pos":20,"out":"Starting setup for product [gitleaks]\n","time":"2025-06-04T02:02:03.8726558Z","args":null}
+{"level":"info","pos":21,"out":"Found matching product config [('repository', 'default')]\n","time":"2025-06-04T02:02:03.873795013Z","args":null}
+{"level":"info","pos":22,"out":"------------------ STO Plugin Setup [END] ------------------\n","time":"2025-06-04T02:02:03.9688344Z","args":null}
+{"level":"info","pos":23,"out":"----------------- Runner execution [START] -----------------\n","time":"2025-06-04T02:02:04.036813128Z","args":null}
+{"level":"info","pos":24,"out":"File Inventory List (in bytes) - {'wait.sh': 421, 'images': {'Folders': [], 'mock_turtle_1.png': 139100, 'gryphon-2.png': 226475, 'hearts_1.png': 31874, 'dodo.png': 109809, 'mock_turtle_4.png': 104563, 'twiddledum.png': 40312, 'mad_hatter.png': 105558, 'hearts_2.png': 45372, 'banner.png': 1779795, 'hearts_3.png': 17025, 'gryphon-1.png': 132223, 'caterpillar.png': 152444, 'mock_turtle_2.png': 54264, 'cheshire_cat.png': 133289, 'mock_turtle_3.png': 83145, 'white_rabbit.png': 106679, 'diagram.png': 154146}, 'jenkins-agent': {'Folders': [], 'Dockerfile': 1689}, 'solutions': {'Folders': [], 'dormouse.md': 2478, 'hearts.md': 1901, 'twiddledum.md': 1429, 'cheshire-cat.md': 1805, 'gryphon.md': 4674, 'dodo.md': 1475, 'mad-hatter.md': 1256, 'duchess.md': 1914, 'mock-turtle.md': 2704, 'white-rabbit.md': 1535, 'caterpillar.md': 2168}, 'jenkins-server': {'Folders': ['jobdsl'], 'jenkins.yaml': 5077, 'plugins.txt': 2175, 'secrets.properties': 2821, 'Dockerfile': 1324, 'flag5.txt': 36, 'run.sh': 356}, '.circleci': {'Folders': [], 'config.yml': 5572}, 'rename.py': 718, '.github': {'Folders': ['workflows']}, 'prod': {'Folders': [], 'server.crt': 1700, 'sshd_config': 2693, 'Dockerfile': 1249, 'entrypoint.sh': 127, 'reportcov.sh': 163, 'authorized_keys': 553}, 'README.md': 5181, '.git': {'Folders': ['info', 'branches', 'refs', 'hooks', 'logs', 'objects'], 'FETCH_HEAD': 101, 'index': 7647, 'config': 266, 'HEAD': 21, 'description': 73}, 'tests': {'Folders': ['data'], 'test_twiddle.py': 1163, 'test_mad_hatter.py': 924, 'conftest.py': 5485, 'test_hearts.py': 1514, 'test_duchess.py': 590, 'test_caterpillar.py': 2649, 'test_gryphon.py': 2259, 'test_white_rabbit.py': 1208, 'test_mock_turtle.py': 1831, 'test_cheschire_cat.py': 1432, 'pytest.ini': 47, 'test_dodo.py': 843, 'utils.py': 1394, 'test_reportcov_and_dormouse.py': 2310}, '.gitignore': 1934, 'cicd-goat-main.iml': 441}\n","time":"2025-06-04T02:02:04.037618267Z","args":null}
+{"level":"info","pos":25,"out":"-------------- Runner Startup Script [START] ---------------\n","time":"2025-06-04T02:02:04.038702229Z","args":null}
+{"level":"info","pos":26,"out":"Running setup [ /bin/setup.sh ]\n","time":"2025-06-04T02:02:04.038709157Z","args":null}
+{"level":"info","pos":27,"out":"running setup script\n","time":"2025-06-04T02:02:04.041338133Z","args":null}
+{"level":"info","pos":28,"out":"gitleaks version: \n","time":"2025-06-04T02:02:04.041350312Z","args":null}
+{"level":"info","pos":29,"out":"8.26.0\n","time":"2025-06-04T02:02:04.361377083Z","args":null}
+{"level":"info","pos":30,"out":"--------------- Runner Startup Script [END] ----------------\n","time":"2025-06-04T02:02:04.405660184Z","args":null}
+{"level":"info","pos":31,"out":"Command [ gitleaks detect --source /harness --report-path /tmp/output.json --report-format sarif --exit-code 0 --redact -v ]\n","time":"2025-06-04T02:02:04.406074773Z","args":null}
+{"level":"info","pos":32,"out":"\n","time":"2025-06-04T02:02:04.937232525Z","args":null}
+{"level":"info","pos":33,"out":"    ○\n","time":"2025-06-04T02:02:04.937324871Z","args":null}
+{"level":"info","pos":34,"out":"    │╲\n","time":"2025-06-04T02:02:04.937349047Z","args":null}
+{"level":"info","pos":35,"out":"    │ ○\n","time":"2025-06-04T02:02:04.937373092Z","args":null}
+{"level":"info","pos":36,"out":"    ○ ░\n","time":"2025-06-04T02:02:04.937388903Z","args":null}
+{"level":"info","pos":37,"out":"    ░    gitleaks\n","time":"2025-06-04T02:02:04.9374131Z","args":null}
+{"level":"info","pos":38,"out":"\n","time":"2025-06-04T02:02:04.93746692Z","args":null}
+{"level":"info","pos":39,"out":"Finding:     curl --request POST \\                                                                                \n","time":"2025-06-04T02:02:05.901838902Z","args":null}
+{"level":"info","pos":40,"out":"            --url https://circleci.com/api/v2/project/gh/cider-security-research/cicd-goat/pipeline \\\n","time":"2025-06-04T02:02:05.901910119Z","args":null}
+{"level":"info","pos":41,"out":"            -u                                                                                       \u001b[1;3;mREDACTED\u001b[0m \\\n","time":"2025-06-04T02:02:05.901933716Z","args":null}
+{"level":"info","pos":42,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:05.901955504Z","args":null}
+{"level":"info","pos":43,"out":"RuleID:      curl-auth-user\n","time":"2025-06-04T02:02:05.90199764Z","args":null}
+{"level":"info","pos":44,"out":"Entropy:     4.236369\n","time":"2025-06-04T02:02:05.902006599Z","args":null}
+{"level":"info","pos":45,"out":"File:        .github/workflows/release.yaml\n","time":"2025-06-04T02:02:05.902009018Z","args":null}
+{"level":"info","pos":46,"out":"Line:        14\n","time":"2025-06-04T02:02:05.902011161Z","args":null}
+{"level":"info","pos":47,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:05.90201323Z","args":null}
+{"level":"info","pos":48,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:05.902014947Z","args":null}
+{"level":"info","pos":49,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:05.902016591Z","args":null}
+{"level":"info","pos":50,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:05.90201833Z","args":null}
+{"level":"info","pos":51,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:.github/workflows/release.yaml:curl-auth-user:14\n","time":"2025-06-04T02:02:05.902020596Z","args":null}
+{"level":"info","pos":52,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/.github/workflows/release.yaml#L14-L16\n","time":"2025-06-04T02:02:05.902022985Z","args":null}
+{"level":"info","pos":53,"out":"\n","time":"2025-06-04T02:02:05.902030606Z","args":null}
+{"level":"info","pos":54,"out":"Finding:     token: \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.947809829Z","args":null}
+{"level":"info","pos":55,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.947849133Z","args":null}
+{"level":"info","pos":56,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:06.947853996Z","args":null}
+{"level":"info","pos":57,"out":"Entropy:     3.678213\n","time":"2025-06-04T02:02:06.947857392Z","args":null}
+{"level":"info","pos":58,"out":"File:        gitea/gitea.yaml\n","time":"2025-06-04T02:02:06.947860311Z","args":null}
+{"level":"info","pos":59,"out":"Line:        5\n","time":"2025-06-04T02:02:06.94786304Z","args":null}
+{"level":"info","pos":60,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:06.947866369Z","args":null}
+{"level":"info","pos":61,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:06.947869034Z","args":null}
+{"level":"info","pos":62,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:06.947871417Z","args":null}
+{"level":"info","pos":63,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:06.947873954Z","args":null}
+{"level":"info","pos":64,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/gitea.yaml:generic-api-key:5\n","time":"2025-06-04T02:02:06.947877826Z","args":null}
+{"level":"info","pos":65,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/gitea.yaml#L5\n","time":"2025-06-04T02:02:06.947889181Z","args":null}
+{"level":"info","pos":66,"out":"\n","time":"2025-06-04T02:02:06.947893458Z","args":null}
+{"level":"info","pos":67,"out":"Finding:     token: \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.947896147Z","args":null}
+{"level":"info","pos":68,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.947898763Z","args":null}
+{"level":"info","pos":69,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:06.94790128Z","args":null}
+{"level":"info","pos":70,"out":"Entropy:     3.725070\n","time":"2025-06-04T02:02:06.947925834Z","args":null}
+{"level":"info","pos":71,"out":"File:        gitea/gitea.yaml\n","time":"2025-06-04T02:02:06.94792948Z","args":null}
+{"level":"info","pos":72,"out":"Line:        15\n","time":"2025-06-04T02:02:06.94793193Z","args":null}
+{"level":"info","pos":73,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:06.947934563Z","args":null}
+{"level":"info","pos":74,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:06.947937366Z","args":null}
+{"level":"info","pos":75,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:06.947939827Z","args":null}
+{"level":"info","pos":76,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:06.947942321Z","args":null}
+{"level":"info","pos":77,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/gitea.yaml:generic-api-key:15\n","time":"2025-06-04T02:02:06.947952861Z","args":null}
+{"level":"info","pos":78,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/gitea.yaml#L15\n","time":"2025-06-04T02:02:06.947959798Z","args":null}
+{"level":"info","pos":79,"out":"\n","time":"2025-06-04T02:02:06.947962306Z","args":null}
+{"level":"info","pos":80,"out":"Finding:     token: \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.947964724Z","args":null}
+{"level":"info","pos":81,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.947967224Z","args":null}
+{"level":"info","pos":82,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:06.94796969Z","args":null}
+{"level":"info","pos":83,"out":"Entropy:     3.668454\n","time":"2025-06-04T02:02:06.947972094Z","args":null}
+{"level":"info","pos":84,"out":"File:        gitea/gitea.yaml\n","time":"2025-06-04T02:02:06.947974472Z","args":null}
+{"level":"info","pos":85,"out":"Line:        19\n","time":"2025-06-04T02:02:06.947976945Z","args":null}
+{"level":"info","pos":86,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:06.947979513Z","args":null}
+{"level":"info","pos":87,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:06.947983033Z","args":null}
+{"level":"info","pos":88,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:06.947985461Z","args":null}
+{"level":"info","pos":89,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:06.947992798Z","args":null}
+{"level":"info","pos":90,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/gitea.yaml:generic-api-key:19\n","time":"2025-06-04T02:02:06.947995808Z","args":null}
+{"level":"info","pos":91,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/gitea.yaml#L19\n","time":"2025-06-04T02:02:06.947998752Z","args":null}
+{"level":"info","pos":92,"out":"\n","time":"2025-06-04T02:02:06.94800104Z","args":null}
+{"level":"info","pos":93,"out":"Finding:     ...EN                = \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.948750254Z","args":null}
+{"level":"info","pos":94,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.948761857Z","args":null}
+{"level":"info","pos":95,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:06.948774172Z","args":null}
+{"level":"info","pos":96,"out":"Entropy:     5.417531\n","time":"2025-06-04T02:02:06.948777172Z","args":null}
+{"level":"info","pos":97,"out":"File:        gitea/app.ini\n","time":"2025-06-04T02:02:06.948780294Z","args":null}
+{"level":"info","pos":98,"out":"Line:        67\n","time":"2025-06-04T02:02:06.948783387Z","args":null}
+{"level":"info","pos":99,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:06.948785792Z","args":null}
+{"level":"info","pos":100,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:06.948787873Z","args":null}
+{"level":"info","pos":101,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:06.948790616Z","args":null}
+{"level":"info","pos":102,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:06.948792732Z","args":null}
+{"level":"info","pos":103,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/app.ini:jwt:67\n","time":"2025-06-04T02:02:06.948796353Z","args":null}
+{"level":"info","pos":104,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/app.ini#L67\n","time":"2025-06-04T02:02:06.948801251Z","args":null}
+{"level":"info","pos":105,"out":"\n","time":"2025-06-04T02:02:06.948803951Z","args":null}
+{"level":"info","pos":106,"out":"Finding:     LFS_JWT_SECRET   = \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.948806503Z","args":null}
+{"level":"info","pos":107,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.948808985Z","args":null}
+{"level":"info","pos":108,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:06.948825223Z","args":null}
+{"level":"info","pos":109,"out":"Entropy:     4.722435\n","time":"2025-06-04T02:02:06.948827613Z","args":null}
+{"level":"info","pos":110,"out":"File:        gitea/app.ini\n","time":"2025-06-04T02:02:06.948830073Z","args":null}
+{"level":"info","pos":111,"out":"Line:        25\n","time":"2025-06-04T02:02:06.948832499Z","args":null}
+{"level":"info","pos":112,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:06.948835142Z","args":null}
+{"level":"info","pos":113,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:06.948839106Z","args":null}
+{"level":"info","pos":114,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:06.948841495Z","args":null}
+{"level":"info","pos":115,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:06.948843699Z","args":null}
+{"level":"info","pos":116,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/app.ini:generic-api-key:25\n","time":"2025-06-04T02:02:06.948846319Z","args":null}
+{"level":"info","pos":117,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/app.ini#L25\n","time":"2025-06-04T02:02:06.948852636Z","args":null}
+{"level":"info","pos":118,"out":"\n","time":"2025-06-04T02:02:06.948855033Z","args":null}
+{"level":"info","pos":119,"out":"Finding:     SECRET_KEY                    = \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.948859427Z","args":null}
+{"level":"info","pos":120,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:06.948862051Z","args":null}
+{"level":"info","pos":121,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:06.948864578Z","args":null}
+{"level":"info","pos":122,"out":"Entropy:     5.265319\n","time":"2025-06-04T02:02:06.948866973Z","args":null}
+{"level":"info","pos":123,"out":"File:        gitea/app.ini\n","time":"2025-06-04T02:02:06.948869272Z","args":null}
+{"level":"info","pos":124,"out":"Line:        64\n","time":"2025-06-04T02:02:06.948871562Z","args":null}
+{"level":"info","pos":125,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:06.948874016Z","args":null}
+{"level":"info","pos":126,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:06.948876441Z","args":null}
+{"level":"info","pos":127,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:06.948878763Z","args":null}
+{"level":"info","pos":128,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:06.948889255Z","args":null}
+{"level":"info","pos":129,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/app.ini:generic-api-key:64\n","time":"2025-06-04T02:02:06.948896418Z","args":null}
+{"level":"info","pos":130,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/app.ini#L64\n","time":"2025-06-04T02:02:06.948899739Z","args":null}
+{"level":"info","pos":131,"out":"\n","time":"2025-06-04T02:02:06.948902027Z","args":null}
+{"level":"info","pos":132,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.112387327Z","args":null}
+{"level":"info","pos":133,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.112415688Z","args":null}
+{"level":"info","pos":134,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.112419158Z","args":null}
+{"level":"info","pos":135,"out":"Entropy:     5.671989\n","time":"2025-06-04T02:02:07.112428175Z","args":null}
+{"level":"info","pos":136,"out":"File:        gitea/repositories/cheshire-cat/tests/certs/localhost/privkey.pem\n","time":"2025-06-04T02:02:07.11243258Z","args":null}
+{"level":"info","pos":137,"out":"Line:        1\n","time":"2025-06-04T02:02:07.112436275Z","args":null}
+{"level":"info","pos":138,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.112439207Z","args":null}
+{"level":"info","pos":139,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.112442081Z","args":null}
+{"level":"info","pos":140,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.11244457Z","args":null}
+{"level":"info","pos":141,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.112447232Z","args":null}
+{"level":"info","pos":142,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/certs/localhost/privkey.pem:private-key:1\n","time":"2025-06-04T02:02:07.112450536Z","args":null}
+{"level":"info","pos":143,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/certs/localhost/privkey.pem#L1-L5\n","time":"2025-06-04T02:02:07.11245403Z","args":null}
+{"level":"info","pos":144,"out":"\n","time":"2025-06-04T02:02:07.112459659Z","args":null}
+{"level":"info","pos":145,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.112464564Z","args":null}
+{"level":"info","pos":146,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.112469222Z","args":null}
+{"level":"info","pos":147,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.112496818Z","args":null}
+{"level":"info","pos":148,"out":"Entropy:     6.035140\n","time":"2025-06-04T02:02:07.112501148Z","args":null}
+{"level":"info","pos":149,"out":"File:        gitea/repositories/cheshire-cat/tests/certs/sanic.example/privkey.pem\n","time":"2025-06-04T02:02:07.112505299Z","args":null}
+{"level":"info","pos":150,"out":"Line:        1\n","time":"2025-06-04T02:02:07.112507936Z","args":null}
+{"level":"info","pos":151,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.112510906Z","args":null}
+{"level":"info","pos":152,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.112513519Z","args":null}
+{"level":"info","pos":153,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.112516195Z","args":null}
+{"level":"info","pos":154,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.112518625Z","args":null}
+{"level":"info","pos":155,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/certs/sanic.example/privkey.pem:private-key:1\n","time":"2025-06-04T02:02:07.112521554Z","args":null}
+{"level":"info","pos":156,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/certs/sanic.example/privkey.pem#L1-L27\n","time":"2025-06-04T02:02:07.112525946Z","args":null}
+{"level":"info","pos":157,"out":"\n","time":"2025-06-04T02:02:07.112528505Z","args":null}
+{"level":"info","pos":158,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.112530872Z","args":null}
+{"level":"info","pos":159,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.112533325Z","args":null}
+{"level":"info","pos":160,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.112535971Z","args":null}
+{"level":"info","pos":161,"out":"Entropy:     5.632337\n","time":"2025-06-04T02:02:07.11253841Z","args":null}
+{"level":"info","pos":162,"out":"File:        gitea/repositories/cheshire-cat/tests/certs/invalid.certmissing/privkey.pem\n","time":"2025-06-04T02:02:07.112541428Z","args":null}
+{"level":"info","pos":163,"out":"Line:        1\n","time":"2025-06-04T02:02:07.112544098Z","args":null}
+{"level":"info","pos":164,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.112546638Z","args":null}
+{"level":"info","pos":165,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.112549171Z","args":null}
+{"level":"info","pos":166,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.112551654Z","args":null}
+{"level":"info","pos":167,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.112554183Z","args":null}
+{"level":"info","pos":168,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/certs/invalid.certmissing/privkey.pem:private-key:1\n","time":"2025-06-04T02:02:07.112557296Z","args":null}
+{"level":"info","pos":169,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/certs/invalid.certmissing/privkey.pem#L1-L5\n","time":"2025-06-04T02:02:07.112560924Z","args":null}
+{"level":"info","pos":170,"out":"\n","time":"2025-06-04T02:02:07.112563375Z","args":null}
+{"level":"info","pos":171,"out":"Finding:     AUTH = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.112565826Z","args":null}
+{"level":"info","pos":172,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.112568393Z","args":null}
+{"level":"info","pos":173,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.112571003Z","args":null}
+{"level":"info","pos":174,"out":"Entropy:     3.625000\n","time":"2025-06-04T02:02:07.112573423Z","args":null}
+{"level":"info","pos":175,"out":"File:        gitea/repositories/cheshire-cat/tests/test_blueprint_group.py\n","time":"2025-06-04T02:02:07.112586626Z","args":null}
+{"level":"info","pos":176,"out":"Line:        18\n","time":"2025-06-04T02:02:07.112589524Z","args":null}
+{"level":"info","pos":177,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.112593259Z","args":null}
+{"level":"info","pos":178,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.112595667Z","args":null}
+{"level":"info","pos":179,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.112598133Z","args":null}
+{"level":"info","pos":180,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.112600515Z","args":null}
+{"level":"info","pos":181,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/test_blueprint_group.py:generic-api-key:18\n","time":"2025-06-04T02:02:07.112603746Z","args":null}
+{"level":"info","pos":182,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/test_blueprint_group.py#L18\n","time":"2025-06-04T02:02:07.112619207Z","args":null}
+{"level":"info","pos":183,"out":"\n","time":"2025-06-04T02:02:07.112622903Z","args":null}
+{"level":"info","pos":184,"out":"Finding:     token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.124057498Z","args":null}
+{"level":"info","pos":185,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.124080435Z","args":null}
+{"level":"info","pos":186,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.124088045Z","args":null}
+{"level":"info","pos":187,"out":"Entropy:     3.752715\n","time":"2025-06-04T02:02:07.124091425Z","args":null}
+{"level":"info","pos":188,"out":"File:        gitea/repositories/cheshire-cat/tests/test_requests.py\n","time":"2025-06-04T02:02:07.124095854Z","args":null}
+{"level":"info","pos":189,"out":"Line:        371\n","time":"2025-06-04T02:02:07.124098537Z","args":null}
+{"level":"info","pos":190,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.124101401Z","args":null}
+{"level":"info","pos":191,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.124103974Z","args":null}
+{"level":"info","pos":192,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.12410655Z","args":null}
+{"level":"info","pos":193,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.124109995Z","args":null}
+{"level":"info","pos":194,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/test_requests.py:generic-api-key:371\n","time":"2025-06-04T02:02:07.124113518Z","args":null}
+{"level":"info","pos":195,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/test_requests.py#L371\n","time":"2025-06-04T02:02:07.124117507Z","args":null}
+{"level":"info","pos":196,"out":"\n","time":"2025-06-04T02:02:07.124120589Z","args":null}
+{"level":"info","pos":197,"out":"Finding:     token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.124123184Z","args":null}
+{"level":"info","pos":198,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.124167012Z","args":null}
+{"level":"info","pos":199,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.124169892Z","args":null}
+{"level":"info","pos":200,"out":"Entropy:     3.752715\n","time":"2025-06-04T02:02:07.124172151Z","args":null}
+{"level":"info","pos":201,"out":"File:        gitea/repositories/cheshire-cat/tests/test_requests.py\n","time":"2025-06-04T02:02:07.124174924Z","args":null}
+{"level":"info","pos":202,"out":"Line:        381\n","time":"2025-06-04T02:02:07.12417736Z","args":null}
+{"level":"info","pos":203,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.124179915Z","args":null}
+{"level":"info","pos":204,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.124220704Z","args":null}
+{"level":"info","pos":205,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.124225573Z","args":null}
+{"level":"info","pos":206,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.124228027Z","args":null}
+{"level":"info","pos":207,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/test_requests.py:generic-api-key:381\n","time":"2025-06-04T02:02:07.124231181Z","args":null}
+{"level":"info","pos":208,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/test_requests.py#L381\n","time":"2025-06-04T02:02:07.124235981Z","args":null}
+{"level":"info","pos":209,"out":"\n","time":"2025-06-04T02:02:07.124238669Z","args":null}
+{"level":"info","pos":210,"out":"Finding:     token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.124241052Z","args":null}
+{"level":"info","pos":211,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.124253343Z","args":null}
+{"level":"info","pos":212,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.124264818Z","args":null}
+{"level":"info","pos":213,"out":"Entropy:     3.752715\n","time":"2025-06-04T02:02:07.124267339Z","args":null}
+{"level":"info","pos":214,"out":"File:        gitea/repositories/cheshire-cat/tests/test_requests.py\n","time":"2025-06-04T02:02:07.124270121Z","args":null}
+{"level":"info","pos":215,"out":"Line:        391\n","time":"2025-06-04T02:02:07.124272516Z","args":null}
+{"level":"info","pos":216,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.124274985Z","args":null}
+{"level":"info","pos":217,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.12427734Z","args":null}
+{"level":"info","pos":218,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.124279892Z","args":null}
+{"level":"info","pos":219,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.124283235Z","args":null}
+{"level":"info","pos":220,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/test_requests.py:generic-api-key:391\n","time":"2025-06-04T02:02:07.124286279Z","args":null}
+{"level":"info","pos":221,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/test_requests.py#L391\n","time":"2025-06-04T02:02:07.124289539Z","args":null}
+{"level":"info","pos":222,"out":"\n","time":"2025-06-04T02:02:07.124291958Z","args":null}
+{"level":"info","pos":223,"out":"Finding:     token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.124294274Z","args":null}
+{"level":"info","pos":224,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.124296778Z","args":null}
+{"level":"info","pos":225,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.124299255Z","args":null}
+{"level":"info","pos":226,"out":"Entropy:     3.752715\n","time":"2025-06-04T02:02:07.124301543Z","args":null}
+{"level":"info","pos":227,"out":"File:        gitea/repositories/cheshire-cat/tests/test_requests.py\n","time":"2025-06-04T02:02:07.124305436Z","args":null}
+{"level":"info","pos":228,"out":"Line:        416\n","time":"2025-06-04T02:02:07.124307837Z","args":null}
+{"level":"info","pos":229,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.124310404Z","args":null}
+{"level":"info","pos":230,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.124312749Z","args":null}
+{"level":"info","pos":231,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.124315156Z","args":null}
+{"level":"info","pos":232,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.124317595Z","args":null}
+{"level":"info","pos":233,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/test_requests.py:generic-api-key:416\n","time":"2025-06-04T02:02:07.124320622Z","args":null}
+{"level":"info","pos":234,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/test_requests.py#L416\n","time":"2025-06-04T02:02:07.124323813Z","args":null}
+{"level":"info","pos":235,"out":"\n","time":"2025-06-04T02:02:07.12432617Z","args":null}
+{"level":"info","pos":236,"out":"Finding:     token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.124328506Z","args":null}
+{"level":"info","pos":237,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.124331684Z","args":null}
+{"level":"info","pos":238,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.124334133Z","args":null}
+{"level":"info","pos":239,"out":"Entropy:     3.752715\n","time":"2025-06-04T02:02:07.124336414Z","args":null}
+{"level":"info","pos":240,"out":"File:        gitea/repositories/cheshire-cat/tests/test_requests.py\n","time":"2025-06-04T02:02:07.124339069Z","args":null}
+{"level":"info","pos":241,"out":"Line:        426\n","time":"2025-06-04T02:02:07.124341463Z","args":null}
+{"level":"info","pos":242,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.124343914Z","args":null}
+{"level":"info","pos":243,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.12434736Z","args":null}
+{"level":"info","pos":244,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.124350854Z","args":null}
+{"level":"info","pos":245,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.124353276Z","args":null}
+{"level":"info","pos":246,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/test_requests.py:generic-api-key:426\n","time":"2025-06-04T02:02:07.124360433Z","args":null}
+{"level":"info","pos":247,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/test_requests.py#L426\n","time":"2025-06-04T02:02:07.124363784Z","args":null}
+{"level":"info","pos":248,"out":"\n","time":"2025-06-04T02:02:07.124366167Z","args":null}
+{"level":"info","pos":249,"out":"Finding:     token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.124368505Z","args":null}
+{"level":"info","pos":250,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.124370998Z","args":null}
+{"level":"info","pos":251,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.124373467Z","args":null}
+{"level":"info","pos":252,"out":"Entropy:     3.752715\n","time":"2025-06-04T02:02:07.124375789Z","args":null}
+{"level":"info","pos":253,"out":"File:        gitea/repositories/cheshire-cat/tests/test_requests.py\n","time":"2025-06-04T02:02:07.124378384Z","args":null}
+{"level":"info","pos":254,"out":"Line:        436\n","time":"2025-06-04T02:02:07.124380786Z","args":null}
+{"level":"info","pos":255,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.124383227Z","args":null}
+{"level":"info","pos":256,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.124385687Z","args":null}
+{"level":"info","pos":257,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.124397091Z","args":null}
+{"level":"info","pos":258,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.124399543Z","args":null}
+{"level":"info","pos":259,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/cheshire-cat/tests/test_requests.py:generic-api-key:436\n","time":"2025-06-04T02:02:07.124402437Z","args":null}
+{"level":"info","pos":260,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/cheshire-cat/tests/test_requests.py#L436\n","time":"2025-06-04T02:02:07.124405595Z","args":null}
+{"level":"info","pos":261,"out":"\n","time":"2025-06-04T02:02:07.124407899Z","args":null}
+{"level":"info","pos":262,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.156117357Z","args":null}
+{"level":"info","pos":263,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.156145335Z","args":null}
+{"level":"info","pos":264,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.156148767Z","args":null}
+{"level":"info","pos":265,"out":"Entropy:     5.444070\n","time":"2025-06-04T02:02:07.156151671Z","args":null}
+{"level":"info","pos":266,"out":"File:        gitea/repositories/dodo/docs/en/docs/tutorial/security/oauth2-jwt.md\n","time":"2025-06-04T02:02:07.156156273Z","args":null}
+{"level":"info","pos":267,"out":"Line:        16\n","time":"2025-06-04T02:02:07.156159611Z","args":null}
+{"level":"info","pos":268,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.156163043Z","args":null}
+{"level":"info","pos":269,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.15616616Z","args":null}
+{"level":"info","pos":270,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.156168911Z","args":null}
+{"level":"info","pos":271,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.156171403Z","args":null}
+{"level":"info","pos":272,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/docs/en/docs/tutorial/security/oauth2-jwt.md:jwt:16\n","time":"2025-06-04T02:02:07.156174697Z","args":null}
+{"level":"info","pos":273,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/docs/en/docs/tutorial/security/oauth2-jwt.md?plain=1#L16\n","time":"2025-06-04T02:02:07.156178714Z","args":null}
+{"level":"info","pos":274,"out":"\n","time":"2025-06-04T02:02:07.156181828Z","args":null}
+{"level":"info","pos":275,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.165585867Z","args":null}
+{"level":"info","pos":276,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.165609673Z","args":null}
+{"level":"info","pos":277,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.165612821Z","args":null}
+{"level":"info","pos":278,"out":"Entropy:     5.444070\n","time":"2025-06-04T02:02:07.165616435Z","args":null}
+{"level":"info","pos":279,"out":"File:        gitea/repositories/dodo/docs/ja/docs/tutorial/security/oauth2-jwt.md\n","time":"2025-06-04T02:02:07.16561985Z","args":null}
+{"level":"info","pos":280,"out":"Line:        16\n","time":"2025-06-04T02:02:07.165623099Z","args":null}
+{"level":"info","pos":281,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.165625916Z","args":null}
+{"level":"info","pos":282,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.16564699Z","args":null}
+{"level":"info","pos":283,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.165649769Z","args":null}
+{"level":"info","pos":284,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.165652239Z","args":null}
+{"level":"info","pos":285,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/docs/ja/docs/tutorial/security/oauth2-jwt.md:jwt:16\n","time":"2025-06-04T02:02:07.165655506Z","args":null}
+{"level":"info","pos":286,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/docs/ja/docs/tutorial/security/oauth2-jwt.md?plain=1#L16\n","time":"2025-06-04T02:02:07.165659494Z","args":null}
+{"level":"info","pos":287,"out":"\n","time":"2025-06-04T02:02:07.165662714Z","args":null}
+{"level":"info","pos":288,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.182921842Z","args":null}
+{"level":"info","pos":289,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.182989866Z","args":null}
+{"level":"info","pos":290,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.183010057Z","args":null}
+{"level":"info","pos":291,"out":"Entropy:     5.444070\n","time":"2025-06-04T02:02:07.18303105Z","args":null}
+{"level":"info","pos":292,"out":"File:        gitea/repositories/dodo/docs/zh/docs/tutorial/security/oauth2-jwt.md\n","time":"2025-06-04T02:02:07.183052162Z","args":null}
+{"level":"info","pos":293,"out":"Line:        16\n","time":"2025-06-04T02:02:07.183071026Z","args":null}
+{"level":"info","pos":294,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.183086839Z","args":null}
+{"level":"info","pos":295,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.183102123Z","args":null}
+{"level":"info","pos":296,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.183116997Z","args":null}
+{"level":"info","pos":297,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.183139158Z","args":null}
+{"level":"info","pos":298,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/docs/zh/docs/tutorial/security/oauth2-jwt.md:jwt:16\n","time":"2025-06-04T02:02:07.183157219Z","args":null}
+{"level":"info","pos":299,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/docs/zh/docs/tutorial/security/oauth2-jwt.md?plain=1#L16\n","time":"2025-06-04T02:02:07.183179372Z","args":null}
+{"level":"info","pos":300,"out":"\n","time":"2025-06-04T02:02:07.183194002Z","args":null}
+{"level":"info","pos":301,"out":"Finding:     SECRET_KEY = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.209325353Z","args":null}
+{"level":"info","pos":302,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.209378458Z","args":null}
+{"level":"info","pos":303,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.209393237Z","args":null}
+{"level":"info","pos":304,"out":"Entropy:     3.868693\n","time":"2025-06-04T02:02:07.209408333Z","args":null}
+{"level":"info","pos":305,"out":"File:        gitea/repositories/dodo/docs_src/security/tutorial005_py310.py\n","time":"2025-06-04T02:02:07.20945866Z","args":null}
+{"level":"info","pos":306,"out":"Line:        15\n","time":"2025-06-04T02:02:07.209477138Z","args":null}
+{"level":"info","pos":307,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.20949414Z","args":null}
+{"level":"info","pos":308,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.209525928Z","args":null}
+{"level":"info","pos":309,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.209561453Z","args":null}
+{"level":"info","pos":310,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.209586549Z","args":null}
+{"level":"info","pos":311,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/docs_src/security/tutorial005_py310.py:generic-api-key:15\n","time":"2025-06-04T02:02:07.20962556Z","args":null}
+{"level":"info","pos":312,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/docs_src/security/tutorial005_py310.py#L15\n","time":"2025-06-04T02:02:07.209653856Z","args":null}
+{"level":"info","pos":313,"out":"\n","time":"2025-06-04T02:02:07.209677538Z","args":null}
+{"level":"info","pos":314,"out":"Finding:     SECRET_KEY = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.20970522Z","args":null}
+{"level":"info","pos":315,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.209735954Z","args":null}
+{"level":"info","pos":316,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.209760789Z","args":null}
+{"level":"info","pos":317,"out":"Entropy:     3.868693\n","time":"2025-06-04T02:02:07.209783475Z","args":null}
+{"level":"info","pos":318,"out":"File:        gitea/repositories/dodo/docs_src/security/tutorial005.py\n","time":"2025-06-04T02:02:07.209803824Z","args":null}
+{"level":"info","pos":319,"out":"Line:        16\n","time":"2025-06-04T02:02:07.209822669Z","args":null}
+{"level":"info","pos":320,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.209853774Z","args":null}
+{"level":"info","pos":321,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.209876877Z","args":null}
+{"level":"info","pos":322,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.209900516Z","args":null}
+{"level":"info","pos":323,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.209921176Z","args":null}
+{"level":"info","pos":324,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/docs_src/security/tutorial005.py:generic-api-key:16\n","time":"2025-06-04T02:02:07.209940774Z","args":null}
+{"level":"info","pos":325,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/docs_src/security/tutorial005.py#L16\n","time":"2025-06-04T02:02:07.209975034Z","args":null}
+{"level":"info","pos":326,"out":"\n","time":"2025-06-04T02:02:07.209993481Z","args":null}
+{"level":"info","pos":327,"out":"Finding:     SECRET_KEY = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.21000931Z","args":null}
+{"level":"info","pos":328,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.210037775Z","args":null}
+{"level":"info","pos":329,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.210063313Z","args":null}
+{"level":"info","pos":330,"out":"Entropy:     3.868693\n","time":"2025-06-04T02:02:07.21008438Z","args":null}
+{"level":"info","pos":331,"out":"File:        gitea/repositories/dodo/docs_src/security/tutorial004.py\n","time":"2025-06-04T02:02:07.210104811Z","args":null}
+{"level":"info","pos":332,"out":"Line:        12\n","time":"2025-06-04T02:02:07.210162139Z","args":null}
+{"level":"info","pos":333,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.210178784Z","args":null}
+{"level":"info","pos":334,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.21019341Z","args":null}
+{"level":"info","pos":335,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.210220139Z","args":null}
+{"level":"info","pos":336,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.210235141Z","args":null}
+{"level":"info","pos":337,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/docs_src/security/tutorial004.py:generic-api-key:12\n","time":"2025-06-04T02:02:07.210254518Z","args":null}
+{"level":"info","pos":338,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/docs_src/security/tutorial004.py#L12\n","time":"2025-06-04T02:02:07.210271831Z","args":null}
+{"level":"info","pos":339,"out":"\n","time":"2025-06-04T02:02:07.210305537Z","args":null}
+{"level":"info","pos":340,"out":"Finding:     SECRET_KEY = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.210335607Z","args":null}
+{"level":"info","pos":341,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.21035516Z","args":null}
+{"level":"info","pos":342,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.210367908Z","args":null}
+{"level":"info","pos":343,"out":"Entropy:     3.868693\n","time":"2025-06-04T02:02:07.210380631Z","args":null}
+{"level":"info","pos":344,"out":"File:        gitea/repositories/dodo/docs_src/security/tutorial005_py39.py\n","time":"2025-06-04T02:02:07.21039245Z","args":null}
+{"level":"info","pos":345,"out":"Line:        16\n","time":"2025-06-04T02:02:07.210402717Z","args":null}
+{"level":"info","pos":346,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.210422777Z","args":null}
+{"level":"info","pos":347,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.210437356Z","args":null}
+{"level":"info","pos":348,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.210452132Z","args":null}
+{"level":"info","pos":349,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.210463518Z","args":null}
+{"level":"info","pos":350,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/docs_src/security/tutorial005_py39.py:generic-api-key:16\n","time":"2025-06-04T02:02:07.210478626Z","args":null}
+{"level":"info","pos":351,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/docs_src/security/tutorial005_py39.py#L16\n","time":"2025-06-04T02:02:07.210492091Z","args":null}
+{"level":"info","pos":352,"out":"\n","time":"2025-06-04T02:02:07.210502837Z","args":null}
+{"level":"info","pos":353,"out":"Finding:     SECRET_KEY = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.210521387Z","args":null}
+{"level":"info","pos":354,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.21053694Z","args":null}
+{"level":"info","pos":355,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.210554396Z","args":null}
+{"level":"info","pos":356,"out":"Entropy:     3.868693\n","time":"2025-06-04T02:02:07.210565792Z","args":null}
+{"level":"info","pos":357,"out":"File:        gitea/repositories/dodo/docs_src/security/tutorial004_py310.py\n","time":"2025-06-04T02:02:07.210579744Z","args":null}
+{"level":"info","pos":358,"out":"Line:        11\n","time":"2025-06-04T02:02:07.21059092Z","args":null}
+{"level":"info","pos":359,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.21060184Z","args":null}
+{"level":"info","pos":360,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.210619947Z","args":null}
+{"level":"info","pos":361,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.210634308Z","args":null}
+{"level":"info","pos":362,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.210649377Z","args":null}
+{"level":"info","pos":363,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/docs_src/security/tutorial004_py310.py:generic-api-key:11\n","time":"2025-06-04T02:02:07.210670295Z","args":null}
+{"level":"info","pos":364,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/docs_src/security/tutorial004_py310.py#L11\n","time":"2025-06-04T02:02:07.210722257Z","args":null}
+{"level":"info","pos":365,"out":"\n","time":"2025-06-04T02:02:07.210755022Z","args":null}
+{"level":"info","pos":366,"out":"Finding:     ...orization\": \"Bearer \u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.320274908Z","args":null}
+{"level":"info","pos":367,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.320593116Z","args":null}
+{"level":"info","pos":368,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.320625319Z","args":null}
+{"level":"info","pos":369,"out":"Entropy:     5.426978\n","time":"2025-06-04T02:02:07.320643977Z","args":null}
+{"level":"info","pos":370,"out":"File:        gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py39.py\n","time":"2025-06-04T02:02:07.320662271Z","args":null}
+{"level":"info","pos":371,"out":"Line:        293\n","time":"2025-06-04T02:02:07.320691303Z","args":null}
+{"level":"info","pos":372,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.32071593Z","args":null}
+{"level":"info","pos":373,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.320739451Z","args":null}
+{"level":"info","pos":374,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.32075856Z","args":null}
+{"level":"info","pos":375,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.320776936Z","args":null}
+{"level":"info","pos":376,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py39.py:jwt:293\n","time":"2025-06-04T02:02:07.320802164Z","args":null}
+{"level":"info","pos":377,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py39.py#L293\n","time":"2025-06-04T02:02:07.320825808Z","args":null}
+{"level":"info","pos":378,"out":"\n","time":"2025-06-04T02:02:07.320850619Z","args":null}
+{"level":"info","pos":379,"out":"Finding:     ...orization\": \"Bearer \u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.320872128Z","args":null}
+{"level":"info","pos":380,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.320892962Z","args":null}
+{"level":"info","pos":381,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.320922526Z","args":null}
+{"level":"info","pos":382,"out":"Entropy:     5.302840\n","time":"2025-06-04T02:02:07.320945973Z","args":null}
+{"level":"info","pos":383,"out":"File:        gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py39.py\n","time":"2025-06-04T02:02:07.320966996Z","args":null}
+{"level":"info","pos":384,"out":"Line:        330\n","time":"2025-06-04T02:02:07.320987009Z","args":null}
+{"level":"info","pos":385,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.321011839Z","args":null}
+{"level":"info","pos":386,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.321034661Z","args":null}
+{"level":"info","pos":387,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.321058134Z","args":null}
+{"level":"info","pos":388,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.321077386Z","args":null}
+{"level":"info","pos":389,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py39.py:jwt:330\n","time":"2025-06-04T02:02:07.321097363Z","args":null}
+{"level":"info","pos":390,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py39.py#L330\n","time":"2025-06-04T02:02:07.321145702Z","args":null}
+{"level":"info","pos":391,"out":"\n","time":"2025-06-04T02:02:07.321169451Z","args":null}
+{"level":"info","pos":392,"out":"Finding:     ...orization\": \"Bearer \u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.321189205Z","args":null}
+{"level":"info","pos":393,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.321210331Z","args":null}
+{"level":"info","pos":394,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.321233564Z","args":null}
+{"level":"info","pos":395,"out":"Entropy:     5.426978\n","time":"2025-06-04T02:02:07.321259049Z","args":null}
+{"level":"info","pos":396,"out":"File:        gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py310.py\n","time":"2025-06-04T02:02:07.321284964Z","args":null}
+{"level":"info","pos":397,"out":"Line:        293\n","time":"2025-06-04T02:02:07.321316852Z","args":null}
+{"level":"info","pos":398,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.321356863Z","args":null}
+{"level":"info","pos":399,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.321379589Z","args":null}
+{"level":"info","pos":400,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.321397337Z","args":null}
+{"level":"info","pos":401,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.321413737Z","args":null}
+{"level":"info","pos":402,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py310.py:jwt:293\n","time":"2025-06-04T02:02:07.321452863Z","args":null}
+{"level":"info","pos":403,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py310.py#L293\n","time":"2025-06-04T02:02:07.321482909Z","args":null}
+{"level":"info","pos":404,"out":"\n","time":"2025-06-04T02:02:07.32150725Z","args":null}
+{"level":"info","pos":405,"out":"Finding:     ...orization\": \"Bearer \u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.321525319Z","args":null}
+{"level":"info","pos":406,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.321543003Z","args":null}
+{"level":"info","pos":407,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.321567924Z","args":null}
+{"level":"info","pos":408,"out":"Entropy:     5.302840\n","time":"2025-06-04T02:02:07.321589906Z","args":null}
+{"level":"info","pos":409,"out":"File:        gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py310.py\n","time":"2025-06-04T02:02:07.3216138Z","args":null}
+{"level":"info","pos":410,"out":"Line:        330\n","time":"2025-06-04T02:02:07.321632832Z","args":null}
+{"level":"info","pos":411,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.321650415Z","args":null}
+{"level":"info","pos":412,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.321673194Z","args":null}
+{"level":"info","pos":413,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.321694089Z","args":null}
+{"level":"info","pos":414,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.321720225Z","args":null}
+{"level":"info","pos":415,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py310.py:jwt:330\n","time":"2025-06-04T02:02:07.321737926Z","args":null}
+{"level":"info","pos":416,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005_py310.py#L330\n","time":"2025-06-04T02:02:07.321767746Z","args":null}
+{"level":"info","pos":417,"out":"\n","time":"2025-06-04T02:02:07.321795189Z","args":null}
+{"level":"info","pos":418,"out":"Finding:     ...orization\": \"Bearer \u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.321815535Z","args":null}
+{"level":"info","pos":419,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.321832024Z","args":null}
+{"level":"info","pos":420,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.321847604Z","args":null}
+{"level":"info","pos":421,"out":"Entropy:     5.426978\n","time":"2025-06-04T02:02:07.321862855Z","args":null}
+{"level":"info","pos":422,"out":"File:        gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005.py\n","time":"2025-06-04T02:02:07.321888331Z","args":null}
+{"level":"info","pos":423,"out":"Line:        272\n","time":"2025-06-04T02:02:07.321906529Z","args":null}
+{"level":"info","pos":424,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.32192131Z","args":null}
+{"level":"info","pos":425,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.321936791Z","args":null}
+{"level":"info","pos":426,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.321962416Z","args":null}
+{"level":"info","pos":427,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.321987316Z","args":null}
+{"level":"info","pos":428,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005.py:jwt:272\n","time":"2025-06-04T02:02:07.322007127Z","args":null}
+{"level":"info","pos":429,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005.py#L272\n","time":"2025-06-04T02:02:07.322030362Z","args":null}
+{"level":"info","pos":430,"out":"\n","time":"2025-06-04T02:02:07.32204982Z","args":null}
+{"level":"info","pos":431,"out":"Finding:     ...orization\": \"Bearer \u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.322073502Z","args":null}
+{"level":"info","pos":432,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.32209248Z","args":null}
+{"level":"info","pos":433,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.32211225Z","args":null}
+{"level":"info","pos":434,"out":"Entropy:     5.302840\n","time":"2025-06-04T02:02:07.322128786Z","args":null}
+{"level":"info","pos":435,"out":"File:        gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005.py\n","time":"2025-06-04T02:02:07.322145669Z","args":null}
+{"level":"info","pos":436,"out":"Line:        306\n","time":"2025-06-04T02:02:07.322162309Z","args":null}
+{"level":"info","pos":437,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.322187706Z","args":null}
+{"level":"info","pos":438,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.322209232Z","args":null}
+{"level":"info","pos":439,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.322226667Z","args":null}
+{"level":"info","pos":440,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.322242671Z","args":null}
+{"level":"info","pos":441,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005.py:jwt:306\n","time":"2025-06-04T02:02:07.322261094Z","args":null}
+{"level":"info","pos":442,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/dodo/tests/test_tutorial/test_security/test_tutorial005.py#L306\n","time":"2025-06-04T02:02:07.322287424Z","args":null}
+{"level":"info","pos":443,"out":"\n","time":"2025-06-04T02:02:07.322308105Z","args":null}
+{"level":"info","pos":444,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.322323944Z","args":null}
+{"level":"info","pos":445,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.322340832Z","args":null}
+{"level":"info","pos":446,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.322358747Z","args":null}
+{"level":"info","pos":447,"out":"Entropy:     5.620629\n","time":"2025-06-04T02:02:07.322384513Z","args":null}
+{"level":"info","pos":448,"out":"File:        gitea/repositories/duchess/docs/algorithms.rst\n","time":"2025-06-04T02:02:07.322405198Z","args":null}
+{"level":"info","pos":449,"out":"Line:        47\n","time":"2025-06-04T02:02:07.322421586Z","args":null}
+{"level":"info","pos":450,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.322442207Z","args":null}
+{"level":"info","pos":451,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.322468493Z","args":null}
+{"level":"info","pos":452,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.322483199Z","args":null}
+{"level":"info","pos":453,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.322505862Z","args":null}
+{"level":"info","pos":454,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/docs/algorithms.rst:jwt:47\n","time":"2025-06-04T02:02:07.322519734Z","args":null}
+{"level":"info","pos":455,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/docs/algorithms.rst#L47\n","time":"2025-06-04T02:02:07.322536353Z","args":null}
+{"level":"info","pos":456,"out":"\n","time":"2025-06-04T02:02:07.322552196Z","args":null}
+{"level":"info","pos":457,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.322566239Z","args":null}
+{"level":"info","pos":458,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.322579987Z","args":null}
+{"level":"info","pos":459,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.322593992Z","args":null}
+{"level":"info","pos":460,"out":"Entropy:     5.227208\n","time":"2025-06-04T02:02:07.322607923Z","args":null}
+{"level":"info","pos":461,"out":"File:        gitea/repositories/duchess/README.rst\n","time":"2025-06-04T02:02:07.322622195Z","args":null}
+{"level":"info","pos":462,"out":"Line:        45\n","time":"2025-06-04T02:02:07.322640352Z","args":null}
+{"level":"info","pos":463,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.322654994Z","args":null}
+{"level":"info","pos":464,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.322668674Z","args":null}
+{"level":"info","pos":465,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.322693524Z","args":null}
+{"level":"info","pos":466,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.32270814Z","args":null}
+{"level":"info","pos":467,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/README.rst:jwt:45\n","time":"2025-06-04T02:02:07.322726768Z","args":null}
+{"level":"info","pos":468,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/README.rst#L45\n","time":"2025-06-04T02:02:07.322749775Z","args":null}
+{"level":"info","pos":469,"out":"\n","time":"2025-06-04T02:02:07.322770677Z","args":null}
+{"level":"info","pos":470,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.322785545Z","args":null}
+{"level":"info","pos":471,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.322799681Z","args":null}
+{"level":"info","pos":472,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.322813576Z","args":null}
+{"level":"info","pos":473,"out":"Entropy:     5.227208\n","time":"2025-06-04T02:02:07.322827376Z","args":null}
+{"level":"info","pos":474,"out":"File:        gitea/repositories/duchess/docs/index.rst\n","time":"2025-06-04T02:02:07.322842574Z","args":null}
+{"level":"info","pos":475,"out":"Line:        35\n","time":"2025-06-04T02:02:07.322856669Z","args":null}
+{"level":"info","pos":476,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.322870816Z","args":null}
+{"level":"info","pos":477,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.322888579Z","args":null}
+{"level":"info","pos":478,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.32290825Z","args":null}
+{"level":"info","pos":479,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.322923274Z","args":null}
+{"level":"info","pos":480,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/docs/index.rst:jwt:35\n","time":"2025-06-04T02:02:07.322937743Z","args":null}
+{"level":"info","pos":481,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/docs/index.rst#L35\n","time":"2025-06-04T02:02:07.32295742Z","args":null}
+{"level":"info","pos":482,"out":"\n","time":"2025-06-04T02:02:07.322976Z","args":null}
+{"level":"info","pos":483,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.322990629Z","args":null}
+{"level":"info","pos":484,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.323004515Z","args":null}
+{"level":"info","pos":485,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.32301858Z","args":null}
+{"level":"info","pos":486,"out":"Entropy:     5.502588\n","time":"2025-06-04T02:02:07.323032674Z","args":null}
+{"level":"info","pos":487,"out":"File:        gitea/repositories/duchess/tests/keys/testkey_ec.priv\n","time":"2025-06-04T02:02:07.323047143Z","args":null}
+{"level":"info","pos":488,"out":"Line:        1\n","time":"2025-06-04T02:02:07.323064676Z","args":null}
+{"level":"info","pos":489,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.323102884Z","args":null}
+{"level":"info","pos":490,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.323113224Z","args":null}
+{"level":"info","pos":491,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.323116294Z","args":null}
+{"level":"info","pos":492,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.32312283Z","args":null}
+{"level":"info","pos":493,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/tests/keys/testkey_ec.priv:private-key:1\n","time":"2025-06-04T02:02:07.323126261Z","args":null}
+{"level":"info","pos":494,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/tests/keys/testkey_ec.priv#L1-L5\n","time":"2025-06-04T02:02:07.323130095Z","args":null}
+{"level":"info","pos":495,"out":"\n","time":"2025-06-04T02:02:07.323150802Z","args":null}
+{"level":"info","pos":496,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.326030309Z","args":null}
+{"level":"info","pos":497,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.326040616Z","args":null}
+{"level":"info","pos":498,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.326046602Z","args":null}
+{"level":"info","pos":499,"out":"Entropy:     4.992949\n","time":"2025-06-04T02:02:07.326049359Z","args":null}
+{"level":"info","pos":500,"out":"File:        gitea/repositories/duchess/tests/keys/testkey_ed25519\n","time":"2025-06-04T02:02:07.32605304Z","args":null}
+{"level":"info","pos":501,"out":"Line:        1\n","time":"2025-06-04T02:02:07.326055795Z","args":null}
+{"level":"info","pos":502,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.326058642Z","args":null}
+{"level":"info","pos":503,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.326061154Z","args":null}
+{"level":"info","pos":504,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.326065231Z","args":null}
+{"level":"info","pos":505,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.326076493Z","args":null}
+{"level":"info","pos":506,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/tests/keys/testkey_ed25519:private-key:1\n","time":"2025-06-04T02:02:07.326080301Z","args":null}
+{"level":"info","pos":507,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/tests/keys/testkey_ed25519#L1-L3\n","time":"2025-06-04T02:02:07.32608569Z","args":null}
+{"level":"info","pos":508,"out":"\n","time":"2025-06-04T02:02:07.326088448Z","args":null}
+{"level":"info","pos":509,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.329493529Z","args":null}
+{"level":"info","pos":510,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.329535007Z","args":null}
+{"level":"info","pos":511,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.329557041Z","args":null}
+{"level":"info","pos":512,"out":"Entropy:     6.030043\n","time":"2025-06-04T02:02:07.329591157Z","args":null}
+{"level":"info","pos":513,"out":"File:        gitea/repositories/duchess/tests/keys/testkey_rsa.priv\n","time":"2025-06-04T02:02:07.32964899Z","args":null}
+{"level":"info","pos":514,"out":"Line:        1\n","time":"2025-06-04T02:02:07.329676018Z","args":null}
+{"level":"info","pos":515,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.329703621Z","args":null}
+{"level":"info","pos":516,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.329733294Z","args":null}
+{"level":"info","pos":517,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.329760538Z","args":null}
+{"level":"info","pos":518,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.329785324Z","args":null}
+{"level":"info","pos":519,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/tests/keys/testkey_rsa.priv:private-key:1\n","time":"2025-06-04T02:02:07.329819184Z","args":null}
+{"level":"info","pos":520,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/tests/keys/testkey_rsa.priv#L1-L27\n","time":"2025-06-04T02:02:07.32984924Z","args":null}
+{"level":"info","pos":521,"out":"\n","time":"2025-06-04T02:02:07.329871493Z","args":null}
+{"level":"info","pos":522,"out":"Finding:     token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.334631022Z","args":null}
+{"level":"info","pos":523,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.33464944Z","args":null}
+{"level":"info","pos":524,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.334653186Z","args":null}
+{"level":"info","pos":525,"out":"Entropy:     5.838781\n","time":"2025-06-04T02:02:07.334656189Z","args":null}
+{"level":"info","pos":526,"out":"File:        gitea/repositories/duchess/CHANGELOG.rst\n","time":"2025-06-04T02:02:07.334659814Z","args":null}
+{"level":"info","pos":527,"out":"Line:        178\n","time":"2025-06-04T02:02:07.334662328Z","args":null}
+{"level":"info","pos":528,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.334665082Z","args":null}
+{"level":"info","pos":529,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.334667924Z","args":null}
+{"level":"info","pos":530,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.334670732Z","args":null}
+{"level":"info","pos":531,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.334673267Z","args":null}
+{"level":"info","pos":532,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/CHANGELOG.rst:jwt:178\n","time":"2025-06-04T02:02:07.334680994Z","args":null}
+{"level":"info","pos":533,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/CHANGELOG.rst#L178\n","time":"2025-06-04T02:02:07.334684675Z","args":null}
+{"level":"info","pos":534,"out":"\n","time":"2025-06-04T02:02:07.334687683Z","args":null}
+{"level":"info","pos":535,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.335783703Z","args":null}
+{"level":"info","pos":536,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.335795781Z","args":null}
+{"level":"info","pos":537,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.335798607Z","args":null}
+{"level":"info","pos":538,"out":"Entropy:     5.311632\n","time":"2025-06-04T02:02:07.335801Z","args":null}
+{"level":"info","pos":539,"out":"File:        gitea/repositories/duchess/docs/usage.rst\n","time":"2025-06-04T02:02:07.335804282Z","args":null}
+{"level":"info","pos":540,"out":"Line:        13\n","time":"2025-06-04T02:02:07.335806767Z","args":null}
+{"level":"info","pos":541,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.335811818Z","args":null}
+{"level":"info","pos":542,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.335814427Z","args":null}
+{"level":"info","pos":543,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.335818818Z","args":null}
+{"level":"info","pos":544,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.335821282Z","args":null}
+{"level":"info","pos":545,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/docs/usage.rst:jwt:13\n","time":"2025-06-04T02:02:07.335824299Z","args":null}
+{"level":"info","pos":546,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/docs/usage.rst#L13\n","time":"2025-06-04T02:02:07.335828012Z","args":null}
+{"level":"info","pos":547,"out":"\n","time":"2025-06-04T02:02:07.33583075Z","args":null}
+{"level":"info","pos":548,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.335833125Z","args":null}
+{"level":"info","pos":549,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.335844214Z","args":null}
+{"level":"info","pos":550,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.335846784Z","args":null}
+{"level":"info","pos":551,"out":"Entropy:     5.311632\n","time":"2025-06-04T02:02:07.335849175Z","args":null}
+{"level":"info","pos":552,"out":"File:        gitea/repositories/duchess/docs/usage.rst\n","time":"2025-06-04T02:02:07.335851869Z","args":null}
+{"level":"info","pos":553,"out":"Line:        29\n","time":"2025-06-04T02:02:07.335865854Z","args":null}
+{"level":"info","pos":554,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.335868594Z","args":null}
+{"level":"info","pos":555,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.335871029Z","args":null}
+{"level":"info","pos":556,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.335873556Z","args":null}
+{"level":"info","pos":557,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.335875949Z","args":null}
+{"level":"info","pos":558,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/docs/usage.rst:jwt:29\n","time":"2025-06-04T02:02:07.335878976Z","args":null}
+{"level":"info","pos":559,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/docs/usage.rst#L29\n","time":"2025-06-04T02:02:07.335883136Z","args":null}
+{"level":"info","pos":560,"out":"\n","time":"2025-06-04T02:02:07.335885595Z","args":null}
+{"level":"info","pos":561,"out":"Finding:     '\u001b[1;3;mREDACTED\u001b[0m'\n","time":"2025-06-04T02:02:07.335888029Z","args":null}
+{"level":"info","pos":562,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.335890527Z","args":null}
+{"level":"info","pos":563,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.3358929Z","args":null}
+{"level":"info","pos":564,"out":"Entropy:     5.427773\n","time":"2025-06-04T02:02:07.335895264Z","args":null}
+{"level":"info","pos":565,"out":"File:        gitea/repositories/duchess/docs/usage.rst\n","time":"2025-06-04T02:02:07.335910816Z","args":null}
+{"level":"info","pos":566,"out":"Line:        60\n","time":"2025-06-04T02:02:07.335923791Z","args":null}
+{"level":"info","pos":567,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.335928218Z","args":null}
+{"level":"info","pos":568,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.335930705Z","args":null}
+{"level":"info","pos":569,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.335933236Z","args":null}
+{"level":"info","pos":570,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.33593582Z","args":null}
+{"level":"info","pos":571,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/docs/usage.rst:jwt:60\n","time":"2025-06-04T02:02:07.335938849Z","args":null}
+{"level":"info","pos":572,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/docs/usage.rst#L60\n","time":"2025-06-04T02:02:07.33594216Z","args":null}
+{"level":"info","pos":573,"out":"\n","time":"2025-06-04T02:02:07.335944575Z","args":null}
+{"level":"info","pos":574,"out":"Finding:     \u003e\u003e\u003e token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.335947062Z","args":null}
+{"level":"info","pos":575,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.335950321Z","args":null}
+{"level":"info","pos":576,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.335952946Z","args":null}
+{"level":"info","pos":577,"out":"Entropy:     5.838781\n","time":"2025-06-04T02:02:07.335955301Z","args":null}
+{"level":"info","pos":578,"out":"File:        gitea/repositories/duchess/docs/usage.rst\n","time":"2025-06-04T02:02:07.335957922Z","args":null}
+{"level":"info","pos":579,"out":"Line:        283\n","time":"2025-06-04T02:02:07.335960483Z","args":null}
+{"level":"info","pos":580,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.335962951Z","args":null}
+{"level":"info","pos":581,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.335965471Z","args":null}
+{"level":"info","pos":582,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.335983521Z","args":null}
+{"level":"info","pos":583,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.33598615Z","args":null}
+{"level":"info","pos":584,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/docs/usage.rst:jwt:283\n","time":"2025-06-04T02:02:07.335989046Z","args":null}
+{"level":"info","pos":585,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/docs/usage.rst#L283\n","time":"2025-06-04T02:02:07.335992909Z","args":null}
+{"level":"info","pos":586,"out":"\n","time":"2025-06-04T02:02:07.335995308Z","args":null}
+{"level":"info","pos":587,"out":"Finding:     \u003e\u003e\u003e private_key = b\"\u001b[1;3;mREDACTED\u001b[0m\\nMHYwEAYHKoZIzj0CAQ...\n","time":"2025-06-04T02:02:07.335999826Z","args":null}
+{"level":"info","pos":588,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.336002591Z","args":null}
+{"level":"info","pos":589,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.336005152Z","args":null}
+{"level":"info","pos":590,"out":"Entropy:     4.612259\n","time":"2025-06-04T02:02:07.336007484Z","args":null}
+{"level":"info","pos":591,"out":"File:        gitea/repositories/duchess/docs/usage.rst\n","time":"2025-06-04T02:02:07.336009995Z","args":null}
+{"level":"info","pos":592,"out":"Line:        25\n","time":"2025-06-04T02:02:07.336012348Z","args":null}
+{"level":"info","pos":593,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.336014763Z","args":null}
+{"level":"info","pos":594,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.336026861Z","args":null}
+{"level":"info","pos":595,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.336029371Z","args":null}
+{"level":"info","pos":596,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.336031753Z","args":null}
+{"level":"info","pos":597,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/docs/usage.rst:private-key:25\n","time":"2025-06-04T02:02:07.336034732Z","args":null}
+{"level":"info","pos":598,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/docs/usage.rst#L25-L26\n","time":"2025-06-04T02:02:07.33604392Z","args":null}
+{"level":"info","pos":599,"out":"\n","time":"2025-06-04T02:02:07.3360464Z","args":null}
+{"level":"info","pos":600,"out":"Finding:     token = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.338329545Z","args":null}
+{"level":"info","pos":601,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.33835618Z","args":null}
+{"level":"info","pos":602,"out":"RuleID:      jwt\n","time":"2025-06-04T02:02:07.338359531Z","args":null}
+{"level":"info","pos":603,"out":"Entropy:     5.838781\n","time":"2025-06-04T02:02:07.338378314Z","args":null}
+{"level":"info","pos":604,"out":"File:        gitea/repositories/duchess/tests/test_jwks_client.py\n","time":"2025-06-04T02:02:07.33838218Z","args":null}
+{"level":"info","pos":605,"out":"Line:        138\n","time":"2025-06-04T02:02:07.338384653Z","args":null}
+{"level":"info","pos":606,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.338387214Z","args":null}
+{"level":"info","pos":607,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.338389956Z","args":null}
+{"level":"info","pos":608,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.338392313Z","args":null}
+{"level":"info","pos":609,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.338394659Z","args":null}
+{"level":"info","pos":610,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/duchess/tests/test_jwks_client.py:jwt:138\n","time":"2025-06-04T02:02:07.33840443Z","args":null}
+{"level":"info","pos":611,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/duchess/tests/test_jwks_client.py#L138\n","time":"2025-06-04T02:02:07.338408546Z","args":null}
+{"level":"info","pos":612,"out":"\n","time":"2025-06-04T02:02:07.338411547Z","args":null}
+{"level":"info","pos":613,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.412074422Z","args":null}
+{"level":"info","pos":614,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.412092677Z","args":null}
+{"level":"info","pos":615,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.412095201Z","args":null}
+{"level":"info","pos":616,"out":"Entropy:     6.027963\n","time":"2025-06-04T02:02:07.412097069Z","args":null}
+{"level":"info","pos":617,"out":"File:        gitea/repositories/white-rabbit/dummyserver/certs/server.key\n","time":"2025-06-04T02:02:07.412100317Z","args":null}
+{"level":"info","pos":618,"out":"Line:        1\n","time":"2025-06-04T02:02:07.412102627Z","args":null}
+{"level":"info","pos":619,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.412104814Z","args":null}
+{"level":"info","pos":620,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.412118591Z","args":null}
+{"level":"info","pos":621,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.412120395Z","args":null}
+{"level":"info","pos":622,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.412130785Z","args":null}
+{"level":"info","pos":623,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/white-rabbit/dummyserver/certs/server.key:private-key:1\n","time":"2025-06-04T02:02:07.412133387Z","args":null}
+{"level":"info","pos":624,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/white-rabbit/dummyserver/certs/server.key#L1-L27\n","time":"2025-06-04T02:02:07.412136072Z","args":null}
+{"level":"info","pos":625,"out":"\n","time":"2025-06-04T02:02:07.41213827Z","args":null}
+{"level":"info","pos":626,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.415285871Z","args":null}
+{"level":"info","pos":627,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.415300802Z","args":null}
+{"level":"info","pos":628,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.415303786Z","args":null}
+{"level":"info","pos":629,"out":"Entropy:     6.031196\n","time":"2025-06-04T02:02:07.415305551Z","args":null}
+{"level":"info","pos":630,"out":"File:        gitea/repositories/white-rabbit/dummyserver/certs/cacert.key\n","time":"2025-06-04T02:02:07.415308065Z","args":null}
+{"level":"info","pos":631,"out":"Line:        1\n","time":"2025-06-04T02:02:07.415310335Z","args":null}
+{"level":"info","pos":632,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.415312378Z","args":null}
+{"level":"info","pos":633,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.415314021Z","args":null}
+{"level":"info","pos":634,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.415315631Z","args":null}
+{"level":"info","pos":635,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.41531721Z","args":null}
+{"level":"info","pos":636,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitea/repositories/white-rabbit/dummyserver/certs/cacert.key:private-key:1\n","time":"2025-06-04T02:02:07.415327914Z","args":null}
+{"level":"info","pos":637,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitea/repositories/white-rabbit/dummyserver/certs/cacert.key#L1-L27\n","time":"2025-06-04T02:02:07.41533499Z","args":null}
+{"level":"info","pos":638,"out":"\n","time":"2025-06-04T02:02:07.415337368Z","args":null}
+{"level":"info","pos":639,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484259805Z","args":null}
+{"level":"info","pos":640,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.48429895Z","args":null}
+{"level":"info","pos":641,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.484303337Z","args":null}
+{"level":"info","pos":642,"out":"Entropy:     6.025566\n","time":"2025-06-04T02:02:07.484307041Z","args":null}
+{"level":"info","pos":643,"out":"File:        gitlab/cert/server.key\n","time":"2025-06-04T02:02:07.484310571Z","args":null}
+{"level":"info","pos":644,"out":"Line:        1\n","time":"2025-06-04T02:02:07.484313856Z","args":null}
+{"level":"info","pos":645,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484345127Z","args":null}
+{"level":"info","pos":646,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484349544Z","args":null}
+{"level":"info","pos":647,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484352597Z","args":null}
+{"level":"info","pos":648,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484361262Z","args":null}
+{"level":"info","pos":649,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitlab/cert/server.key:private-key:1\n","time":"2025-06-04T02:02:07.484366447Z","args":null}
+{"level":"info","pos":650,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitlab/cert/server.key#L1-L52\n","time":"2025-06-04T02:02:07.484375545Z","args":null}
+{"level":"info","pos":651,"out":"\n","time":"2025-06-04T02:02:07.484379211Z","args":null}
+{"level":"info","pos":652,"out":"Finding:     password         = \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484382431Z","args":null}
+{"level":"info","pos":653,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484385599Z","args":null}
+{"level":"info","pos":654,"out":"RuleID:      hashicorp-tf-password\n","time":"2025-06-04T02:02:07.484409854Z","args":null}
+{"level":"info","pos":655,"out":"Entropy:     3.121928\n","time":"2025-06-04T02:02:07.484413295Z","args":null}
+{"level":"info","pos":656,"out":"File:        gitlab/gitlab.tf\n","time":"2025-06-04T02:02:07.484416227Z","args":null}
+{"level":"info","pos":657,"out":"Line:        36\n","time":"2025-06-04T02:02:07.484419132Z","args":null}
+{"level":"info","pos":658,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484422134Z","args":null}
+{"level":"info","pos":659,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484425154Z","args":null}
+{"level":"info","pos":660,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484428565Z","args":null}
+{"level":"info","pos":661,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484431534Z","args":null}
+{"level":"info","pos":662,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitlab/gitlab.tf:hashicorp-tf-password:36\n","time":"2025-06-04T02:02:07.484437137Z","args":null}
+{"level":"info","pos":663,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitlab/gitlab.tf#L36\n","time":"2025-06-04T02:02:07.484447224Z","args":null}
+{"level":"info","pos":664,"out":"\n","time":"2025-06-04T02:02:07.484450129Z","args":null}
+{"level":"info","pos":665,"out":"Finding:     token    = \"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.484452653Z","args":null}
+{"level":"info","pos":666,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484455278Z","args":null}
+{"level":"info","pos":667,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484457841Z","args":null}
+{"level":"info","pos":668,"out":"Entropy:     3.676109\n","time":"2025-06-04T02:02:07.484460092Z","args":null}
+{"level":"info","pos":669,"out":"File:        gitlab/gitlab.tf\n","time":"2025-06-04T02:02:07.484462415Z","args":null}
+{"level":"info","pos":670,"out":"Line:        12\n","time":"2025-06-04T02:02:07.484464669Z","args":null}
+{"level":"info","pos":671,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484472214Z","args":null}
+{"level":"info","pos":672,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.48447457Z","args":null}
+{"level":"info","pos":673,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484476945Z","args":null}
+{"level":"info","pos":674,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484484871Z","args":null}
+{"level":"info","pos":675,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitlab/gitlab.tf:generic-api-key:12\n","time":"2025-06-04T02:02:07.484488273Z","args":null}
+{"level":"info","pos":676,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitlab/gitlab.tf#L12\n","time":"2025-06-04T02:02:07.484491639Z","args":null}
+{"level":"info","pos":677,"out":"\n","time":"2025-06-04T02:02:07.484494448Z","args":null}
+{"level":"info","pos":678,"out":"Finding:     ...ypi\n","time":"2025-06-04T02:02:07.484497314Z","args":null}
+{"level":"info","pos":679,"out":"username = root\n","time":"2025-06-04T02:02:07.484508803Z","args":null}
+{"level":"info","pos":680,"out":"password = \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484512041Z","args":null}
+{"level":"info","pos":681,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484515189Z","args":null}
+{"level":"info","pos":682,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484520112Z","args":null}
+{"level":"info","pos":683,"out":"Entropy:     3.676109\n","time":"2025-06-04T02:02:07.48452306Z","args":null}
+{"level":"info","pos":684,"out":"File:        gitlab/resources/gryphon/.pypirc\n","time":"2025-06-04T02:02:07.484569305Z","args":null}
+{"level":"info","pos":685,"out":"Line:        8\n","time":"2025-06-04T02:02:07.484573039Z","args":null}
+{"level":"info","pos":686,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484575912Z","args":null}
+{"level":"info","pos":687,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484578781Z","args":null}
+{"level":"info","pos":688,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484581751Z","args":null}
+{"level":"info","pos":689,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484584678Z","args":null}
+{"level":"info","pos":690,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:gitlab/resources/gryphon/.pypirc:generic-api-key:8\n","time":"2025-06-04T02:02:07.484588118Z","args":null}
+{"level":"info","pos":691,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/gitlab/resources/gryphon/.pypirc#L8\n","time":"2025-06-04T02:02:07.484598259Z","args":null}
+{"level":"info","pos":692,"out":"\n","time":"2025-06-04T02:02:07.484601112Z","args":null}
+{"level":"info","pos":693,"out":"Finding:     ...pi\n","time":"2025-06-04T02:02:07.484603418Z","args":null}
+{"level":"info","pos":694,"out":"username = alice\n","time":"2025-06-04T02:02:07.484606066Z","args":null}
+{"level":"info","pos":695,"out":"password = \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484608384Z","args":null}
+{"level":"info","pos":696,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484617825Z","args":null}
+{"level":"info","pos":697,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484620728Z","args":null}
+{"level":"info","pos":698,"out":"Entropy:     3.679229\n","time":"2025-06-04T02:02:07.484622975Z","args":null}
+{"level":"info","pos":699,"out":"File:        tests/data/pygryphon/.pypirc\n","time":"2025-06-04T02:02:07.484625555Z","args":null}
+{"level":"info","pos":700,"out":"Line:        8\n","time":"2025-06-04T02:02:07.484627896Z","args":null}
+{"level":"info","pos":701,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484630307Z","args":null}
+{"level":"info","pos":702,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484634395Z","args":null}
+{"level":"info","pos":703,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484644405Z","args":null}
+{"level":"info","pos":704,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484647244Z","args":null}
+{"level":"info","pos":705,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:tests/data/pygryphon/.pypirc:generic-api-key:8\n","time":"2025-06-04T02:02:07.484649982Z","args":null}
+{"level":"info","pos":706,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/tests/data/pygryphon/.pypirc#L8\n","time":"2025-06-04T02:02:07.484652978Z","args":null}
+{"level":"info","pos":707,"out":"\n","time":"2025-06-04T02:02:07.484655267Z","args":null}
+{"level":"info","pos":708,"out":"Finding:     GITEA_ACCESS_TOKEN = \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484658111Z","args":null}
+{"level":"info","pos":709,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484660761Z","args":null}
+{"level":"info","pos":710,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484663564Z","args":null}
+{"level":"info","pos":711,"out":"Entropy:     3.678213\n","time":"2025-06-04T02:02:07.484665952Z","args":null}
+{"level":"info","pos":712,"out":"File:        jenkins-server/secrets.properties\n","time":"2025-06-04T02:02:07.484668708Z","args":null}
+{"level":"info","pos":713,"out":"Line:        3\n","time":"2025-06-04T02:02:07.484671291Z","args":null}
+{"level":"info","pos":714,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484674131Z","args":null}
+{"level":"info","pos":715,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484676344Z","args":null}
+{"level":"info","pos":716,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.48467802Z","args":null}
+{"level":"info","pos":717,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484679716Z","args":null}
+{"level":"info","pos":718,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:jenkins-server/secrets.properties:generic-api-key:3\n","time":"2025-06-04T02:02:07.484681751Z","args":null}
+{"level":"info","pos":719,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/jenkins-server/secrets.properties#L3\n","time":"2025-06-04T02:02:07.484683801Z","args":null}
+{"level":"info","pos":720,"out":"\n","time":"2025-06-04T02:02:07.48468567Z","args":null}
+{"level":"info","pos":721,"out":"Finding:     AGENT_PRIVATE_KEY = \u001b[1;3;mREDACTED\u001b[0m\\n\n","time":"2025-06-04T02:02:07.484691562Z","args":null}
+{"level":"info","pos":722,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484696643Z","args":null}
+{"level":"info","pos":723,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.484698287Z","args":null}
+{"level":"info","pos":724,"out":"Entropy:     5.993045\n","time":"2025-06-04T02:02:07.4846998Z","args":null}
+{"level":"info","pos":725,"out":"File:        jenkins-server/secrets.properties\n","time":"2025-06-04T02:02:07.48470146Z","args":null}
+{"level":"info","pos":726,"out":"Line:        1\n","time":"2025-06-04T02:02:07.484713402Z","args":null}
+{"level":"info","pos":727,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484716192Z","args":null}
+{"level":"info","pos":728,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484718765Z","args":null}
+{"level":"info","pos":729,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484721335Z","args":null}
+{"level":"info","pos":730,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484723989Z","args":null}
+{"level":"info","pos":731,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:jenkins-server/secrets.properties:private-key:1\n","time":"2025-06-04T02:02:07.484731346Z","args":null}
+{"level":"info","pos":732,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/jenkins-server/secrets.properties#L1\n","time":"2025-06-04T02:02:07.484734869Z","args":null}
+{"level":"info","pos":733,"out":"\n","time":"2025-06-04T02:02:07.484737292Z","args":null}
+{"level":"info","pos":734,"out":"Finding:     env('KEY', \"\u001b[1;3;mREDACTED\u001b[0m\\\\n\")\n","time":"2025-06-04T02:02:07.484739987Z","args":null}
+{"level":"info","pos":735,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484742763Z","args":null}
+{"level":"info","pos":736,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.484745373Z","args":null}
+{"level":"info","pos":737,"out":"Entropy:     5.989458\n","time":"2025-06-04T02:02:07.484748158Z","args":null}
+{"level":"info","pos":738,"out":"File:        jenkins-server/jobdsl/reportcov.groovy\n","time":"2025-06-04T02:02:07.484750068Z","args":null}
+{"level":"info","pos":739,"out":"Line:        3\n","time":"2025-06-04T02:02:07.484751619Z","args":null}
+{"level":"info","pos":740,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484753253Z","args":null}
+{"level":"info","pos":741,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484754769Z","args":null}
+{"level":"info","pos":742,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484756349Z","args":null}
+{"level":"info","pos":743,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484762082Z","args":null}
+{"level":"info","pos":744,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:jenkins-server/jobdsl/reportcov.groovy:private-key:3\n","time":"2025-06-04T02:02:07.484764206Z","args":null}
+{"level":"info","pos":745,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/jenkins-server/jobdsl/reportcov.groovy#L3\n","time":"2025-06-04T02:02:07.484766296Z","args":null}
+{"level":"info","pos":746,"out":"\n","time":"2025-06-04T02:02:07.484841997Z","args":null}
+{"level":"info","pos":747,"out":"Finding:     \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484852037Z","args":null}
+{"level":"info","pos":748,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484854656Z","args":null}
+{"level":"info","pos":749,"out":"RuleID:      private-key\n","time":"2025-06-04T02:02:07.484857044Z","args":null}
+{"level":"info","pos":750,"out":"Entropy:     6.001542\n","time":"2025-06-04T02:02:07.484859502Z","args":null}
+{"level":"info","pos":751,"out":"File:        tests/data/reportcov_and_dormouse/key\n","time":"2025-06-04T02:02:07.484861984Z","args":null}
+{"level":"info","pos":752,"out":"Line:        1\n","time":"2025-06-04T02:02:07.484864324Z","args":null}
+{"level":"info","pos":753,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484866707Z","args":null}
+{"level":"info","pos":754,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484869129Z","args":null}
+{"level":"info","pos":755,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484872197Z","args":null}
+{"level":"info","pos":756,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484874603Z","args":null}
+{"level":"info","pos":757,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:tests/data/reportcov_and_dormouse/key:private-key:1\n","time":"2025-06-04T02:02:07.484877533Z","args":null}
+{"level":"info","pos":758,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/tests/data/reportcov_and_dormouse/key#L1-L38\n","time":"2025-06-04T02:02:07.484880778Z","args":null}
+{"level":"info","pos":759,"out":"\n","time":"2025-06-04T02:02:07.484883109Z","args":null}
+{"level":"info","pos":760,"out":"Finding:     ...://localhost:4000', private_token=\"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.48488597Z","args":null}
+{"level":"info","pos":761,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484888356Z","args":null}
+{"level":"info","pos":762,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484889962Z","args":null}
+{"level":"info","pos":763,"out":"Entropy:     3.679229\n","time":"2025-06-04T02:02:07.484891403Z","args":null}
+{"level":"info","pos":764,"out":"File:        tests/test_gryphon.py\n","time":"2025-06-04T02:02:07.484892968Z","args":null}
+{"level":"info","pos":765,"out":"Line:        29\n","time":"2025-06-04T02:02:07.48489454Z","args":null}
+{"level":"info","pos":766,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484896111Z","args":null}
+{"level":"info","pos":767,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484897551Z","args":null}
+{"level":"info","pos":768,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484899019Z","args":null}
+{"level":"info","pos":769,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484900523Z","args":null}
+{"level":"info","pos":770,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:tests/test_gryphon.py:generic-api-key:29\n","time":"2025-06-04T02:02:07.48490237Z","args":null}
+{"level":"info","pos":771,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/tests/test_gryphon.py#L29\n","time":"2025-06-04T02:02:07.484904174Z","args":null}
+{"level":"info","pos":772,"out":"\n","time":"2025-06-04T02:02:07.484905585Z","args":null}
+{"level":"info","pos":773,"out":"Finding:     ...://localhost:4000', private_token=\"\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.484911229Z","args":null}
+{"level":"info","pos":774,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484912835Z","args":null}
+{"level":"info","pos":775,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484914345Z","args":null}
+{"level":"info","pos":776,"out":"Entropy:     3.676109\n","time":"2025-06-04T02:02:07.484915739Z","args":null}
+{"level":"info","pos":777,"out":"File:        tests/test_gryphon.py\n","time":"2025-06-04T02:02:07.484917228Z","args":null}
+{"level":"info","pos":778,"out":"Line:        38\n","time":"2025-06-04T02:02:07.48491867Z","args":null}
+{"level":"info","pos":779,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484924756Z","args":null}
+{"level":"info","pos":780,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484929594Z","args":null}
+{"level":"info","pos":781,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484931204Z","args":null}
+{"level":"info","pos":782,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484932677Z","args":null}
+{"level":"info","pos":783,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:tests/test_gryphon.py:generic-api-key:38\n","time":"2025-06-04T02:02:07.484934471Z","args":null}
+{"level":"info","pos":784,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/tests/test_gryphon.py#L38\n","time":"2025-06-04T02:02:07.484936284Z","args":null}
+{"level":"info","pos":785,"out":"\n","time":"2025-06-04T02:02:07.484937709Z","args":null}
+{"level":"info","pos":786,"out":"Finding:     ENV_TOKEN = '\u001b[1;3;mREDACTED\u001b[0m'\n","time":"2025-06-04T02:02:07.484939282Z","args":null}
+{"level":"info","pos":787,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484941736Z","args":null}
+{"level":"info","pos":788,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484943389Z","args":null}
+{"level":"info","pos":789,"out":"Entropy:     3.668454\n","time":"2025-06-04T02:02:07.48494802Z","args":null}
+{"level":"info","pos":790,"out":"File:        tests/test_caterpillar.py\n","time":"2025-06-04T02:02:07.48494965Z","args":null}
+{"level":"info","pos":791,"out":"Line:        15\n","time":"2025-06-04T02:02:07.484951118Z","args":null}
+{"level":"info","pos":792,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484952624Z","args":null}
+{"level":"info","pos":793,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484954079Z","args":null}
+{"level":"info","pos":794,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484955551Z","args":null}
+{"level":"info","pos":795,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484957001Z","args":null}
+{"level":"info","pos":796,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:tests/test_caterpillar.py:generic-api-key:15\n","time":"2025-06-04T02:02:07.484963427Z","args":null}
+{"level":"info","pos":797,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/tests/test_caterpillar.py#L15\n","time":"2025-06-04T02:02:07.484965474Z","args":null}
+{"level":"info","pos":798,"out":"\n","time":"2025-06-04T02:02:07.484970389Z","args":null}
+{"level":"info","pos":799,"out":"Finding:     ...st:4000/api/v4/user?access_token=\u001b[1;3;mREDACTED\u001b[0m\"\n","time":"2025-06-04T02:02:07.484972145Z","args":null}
+{"level":"info","pos":800,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484977513Z","args":null}
+{"level":"info","pos":801,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484979259Z","args":null}
+{"level":"info","pos":802,"out":"Entropy:     3.679229\n","time":"2025-06-04T02:02:07.484980732Z","args":null}
+{"level":"info","pos":803,"out":"File:        wait.sh\n","time":"2025-06-04T02:02:07.484982224Z","args":null}
+{"level":"info","pos":804,"out":"Line:        4\n","time":"2025-06-04T02:02:07.484983672Z","args":null}
+{"level":"info","pos":805,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.484985168Z","args":null}
+{"level":"info","pos":806,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.484986613Z","args":null}
+{"level":"info","pos":807,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.484988068Z","args":null}
+{"level":"info","pos":808,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.484989539Z","args":null}
+{"level":"info","pos":809,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:wait.sh:generic-api-key:4\n","time":"2025-06-04T02:02:07.484991188Z","args":null}
+{"level":"info","pos":810,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/wait.sh#L4\n","time":"2025-06-04T02:02:07.484992973Z","args":null}
+{"level":"info","pos":811,"out":"\n","time":"2025-06-04T02:02:07.484994376Z","args":null}
+{"level":"info","pos":812,"out":"Finding:     jackson2-api: \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484995883Z","args":null}
+{"level":"info","pos":813,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.484997421Z","args":null}
+{"level":"info","pos":814,"out":"RuleID:      generic-api-key\n","time":"2025-06-04T02:02:07.484999079Z","args":null}
+{"level":"info","pos":815,"out":"Entropy:     3.625815\n","time":"2025-06-04T02:02:07.485000475Z","args":null}
+{"level":"info","pos":816,"out":"File:        jenkins-server/plugins.txt\n","time":"2025-06-04T02:02:07.485002052Z","args":null}
+{"level":"info","pos":817,"out":"Line:        75\n","time":"2025-06-04T02:02:07.485003619Z","args":null}
+{"level":"info","pos":818,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.485005119Z","args":null}
+{"level":"info","pos":819,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.485006539Z","args":null}
+{"level":"info","pos":820,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.485008078Z","args":null}
+{"level":"info","pos":821,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.485009498Z","args":null}
+{"level":"info","pos":822,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:jenkins-server/plugins.txt:generic-api-key:75\n","time":"2025-06-04T02:02:07.485011188Z","args":null}
+{"level":"info","pos":823,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/jenkins-server/plugins.txt#L75\n","time":"2025-06-04T02:02:07.485013031Z","args":null}
+{"level":"info","pos":824,"out":"\n","time":"2025-06-04T02:02:07.485017873Z","args":null}
+{"level":"info","pos":825,"out":"Finding:     FLAG = '\u001b[1;3;mREDACTED\u001b[0m' \\\n","time":"2025-06-04T02:02:07.497478321Z","args":null}
+{"level":"info","pos":826,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.497491908Z","args":null}
+{"level":"info","pos":827,"out":"RuleID:      pypi-upload-token\n","time":"2025-06-04T02:02:07.497494229Z","args":null}
+{"level":"info","pos":828,"out":"Entropy:     5.243085\n","time":"2025-06-04T02:02:07.49749615Z","args":null}
+{"level":"info","pos":829,"out":"File:        tests/test_duchess.py\n","time":"2025-06-04T02:02:07.497497811Z","args":null}
+{"level":"info","pos":830,"out":"Line:        4\n","time":"2025-06-04T02:02:07.497512283Z","args":null}
+{"level":"info","pos":831,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.497515378Z","args":null}
+{"level":"info","pos":832,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.497517936Z","args":null}
+{"level":"info","pos":833,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.497520316Z","args":null}
+{"level":"info","pos":834,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.497522778Z","args":null}
+{"level":"info","pos":835,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:tests/test_duchess.py:pypi-upload-token:4\n","time":"2025-06-04T02:02:07.497551785Z","args":null}
+{"level":"info","pos":836,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/tests/test_duchess.py#L4\n","time":"2025-06-04T02:02:07.497556269Z","args":null}
+{"level":"info","pos":837,"out":"\n","time":"2025-06-04T02:02:07.497559016Z","args":null}
+{"level":"info","pos":838,"out":"Finding:     \"Match\": \"\u001b[1;3;mREDACTED\u001b[0m\",\n","time":"2025-06-04T02:02:07.592495252Z","args":null}
+{"level":"info","pos":839,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.592518786Z","args":null}
+{"level":"info","pos":840,"out":"RuleID:      pypi-upload-token\n","time":"2025-06-04T02:02:07.592521598Z","args":null}
+{"level":"info","pos":841,"out":"Entropy:     5.538379\n","time":"2025-06-04T02:02:07.592524421Z","args":null}
+{"level":"info","pos":842,"out":"File:        solutions/duchess.md\n","time":"2025-06-04T02:02:07.592526135Z","args":null}
+{"level":"info","pos":843,"out":"Line:        35\n","time":"2025-06-04T02:02:07.592528085Z","args":null}
+{"level":"info","pos":844,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.592530104Z","args":null}
+{"level":"info","pos":845,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.59253178Z","args":null}
+{"level":"info","pos":846,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.592555042Z","args":null}
+{"level":"info","pos":847,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.592558109Z","args":null}
+{"level":"info","pos":848,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:solutions/duchess.md:pypi-upload-token:35\n","time":"2025-06-04T02:02:07.592566563Z","args":null}
+{"level":"info","pos":849,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/solutions/duchess.md?plain=1#L35\n","time":"2025-06-04T02:02:07.592582801Z","args":null}
+{"level":"info","pos":850,"out":"\n","time":"2025-06-04T02:02:07.59258619Z","args":null}
+{"level":"info","pos":851,"out":"Finding:     \"Secret\": \"\u001b[1;3;mREDACTED\u001b[0m\",\n","time":"2025-06-04T02:02:07.592588805Z","args":null}
+{"level":"info","pos":852,"out":"Secret:      \u001b[1;3;mREDACTED\u001b[0m\n","time":"2025-06-04T02:02:07.592591742Z","args":null}
+{"level":"info","pos":853,"out":"RuleID:      pypi-upload-token\n","time":"2025-06-04T02:02:07.592594299Z","args":null}
+{"level":"info","pos":854,"out":"Entropy:     5.538379\n","time":"2025-06-04T02:02:07.592599336Z","args":null}
+{"level":"info","pos":855,"out":"File:        solutions/duchess.md\n","time":"2025-06-04T02:02:07.592601124Z","args":null}
+{"level":"info","pos":856,"out":"Line:        36\n","time":"2025-06-04T02:02:07.592615431Z","args":null}
+{"level":"info","pos":857,"out":"Commit:      cfbe237c742ee1ae1fa1e1830602200c6621f6c3\n","time":"2025-06-04T02:02:07.592617584Z","args":null}
+{"level":"info","pos":858,"out":"Author:      Kartik Kumar\n","time":"2025-06-04T02:02:07.592619264Z","args":null}
+{"level":"info","pos":859,"out":"Email:       kartik.kumar@harness.io\n","time":"2025-06-04T02:02:07.592620794Z","args":null}
+{"level":"info","pos":860,"out":"Date:        2025-01-07T07:23:39Z\n","time":"2025-06-04T02:02:07.592622358Z","args":null}
+{"level":"info","pos":861,"out":"Fingerprint: cfbe237c742ee1ae1fa1e1830602200c6621f6c3:solutions/duchess.md:pypi-upload-token:36\n","time":"2025-06-04T02:02:07.592624158Z","args":null}
+{"level":"info","pos":862,"out":"Link:        https://github.com/repo-posture/test-repo/blob/cfbe237c742ee1ae1fa1e1830602200c6621f6c3/solutions/duchess.md?plain=1#L36\n","time":"2025-06-04T02:02:07.592626046Z","args":null}
+{"level":"info","pos":863,"out":"\n","time":"2025-06-04T02:02:07.592782512Z","args":null}
+{"level":"info","pos":864,"out":"\u001b[90m2:02AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1m1 commits scanned.\u001b[0m\n","time":"2025-06-04T02:02:07.7371582Z","args":null}
+{"level":"info","pos":865,"out":"\u001b[90m2:02AM\u001b[0m \u001b[32mINF\u001b[0m \u001b[1mscanned ~55987828 bytes (55.99 MB) in 2.76s\u001b[0m\n","time":"2025-06-04T02:02:07.737218666Z","args":null}
+{"level":"info","pos":866,"out":"\u001b[90m2:02AM\u001b[0m \u001b[33mWRN\u001b[0m \u001b[1mleaks found: 63\u001b[0m\n","time":"2025-06-04T02:02:07.737234038Z","args":null}
+{"level":"info","pos":867,"out":"Scan output exists inside runner at: /tmp/output.json writing to /addon/results/DkQ5HYeWKnJfTS8ZsCdfvr\n","time":"2025-06-04T02:02:07.786707662Z","args":null}
+{"level":"info","pos":868,"out":"------------------ Runner execution [END] ------------------\n","time":"2025-06-04T02:02:07.788143311Z","args":null}
+{"level":"info","pos":869,"out":"------------------ Process Issues [START] ------------------\n","time":"2025-06-04T02:02:07.788562737Z","args":null}
+{"level":"info","pos":870,"out":"Found SARIF results file with version 2.1.0\n","time":"2025-06-04T02:02:07.792139677Z","args":null}
+{"level":"info","pos":871,"out":"Number of raw issues extracted: 63\n","time":"2025-06-04T02:02:07.793696118Z","args":null}
+{"level":"info","pos":872,"out":"Count after normalization: 63\n","time":"2025-06-04T02:02:07.844353896Z","args":null}
+{"level":"info","pos":873,"out":"Count after deduplication: 6\n","time":"2025-06-04T02:02:07.844425525Z","args":null}
+{"level":"info","pos":874,"out":"Deduplicated by: [90.48%]\n","time":"2025-06-04T02:02:07.844428766Z","args":null}
+{"level":"info","pos":875,"out":"Starting issue upload\n","time":"2025-06-04T02:02:07.84443168Z","args":null}
+{"level":"info","pos":876,"out":"Issue upload complete\n","time":"2025-06-04T02:02:08.676316051Z","args":null}
+{"level":"info","pos":877,"out":"------------------- Process Issues [END] -------------------\n","time":"2025-06-04T02:02:08.794707363Z","args":null}
+{"level":"info","pos":878,"out":"Scan Results: {\n","time":"2025-06-04T02:02:08.79517383Z","args":null}
+{"level":"info","pos":879,"out":"    \"jobId\": \"DkQ5HYeWKnJfTS8ZsCdfvr\",\n","time":"2025-06-04T02:02:08.79521847Z","args":null}
+{"level":"info","pos":880,"out":"    \"status\": \"Succeeded\",\n","time":"2025-06-04T02:02:08.795234864Z","args":null}
+{"level":"info","pos":881,"out":"    \"issuesCount\": 6,\n","time":"2025-06-04T02:02:08.795247828Z","args":null}
+{"level":"info","pos":882,"out":"    \"newIssuesCount\": 0,\n","time":"2025-06-04T02:02:08.795259939Z","args":null}
+{"level":"info","pos":883,"out":"    \"issuesBySeverityCount\": {\n","time":"2025-06-04T02:02:08.79526974Z","args":null}
+{"level":"info","pos":884,"out":"        \"ExternalPolicyFailures\": 0,\n","time":"2025-06-04T02:02:08.795280279Z","args":null}
+{"level":"info","pos":885,"out":"        \"NewCritical\": 0,\n","time":"2025-06-04T02:02:08.795291048Z","args":null}
+{"level":"info","pos":886,"out":"        \"NewHigh\": 0,\n","time":"2025-06-04T02:02:08.795301069Z","args":null}
+{"level":"info","pos":887,"out":"        \"NewMedium\": 0,\n","time":"2025-06-04T02:02:08.795311054Z","args":null}
+{"level":"info","pos":888,"out":"        \"NewLow\": 0,\n","time":"2025-06-04T02:02:08.795321087Z","args":null}
+{"level":"info","pos":889,"out":"        \"NewInfo\": 0,\n","time":"2025-06-04T02:02:08.795330693Z","args":null}
+{"level":"info","pos":890,"out":"        \"Unassigned\": 0,\n","time":"2025-06-04T02:02:08.795341535Z","args":null}
+{"level":"info","pos":891,"out":"        \"NewUnassigned\": 0,\n","time":"2025-06-04T02:02:08.795351892Z","args":null}
+{"level":"info","pos":892,"out":"        \"Critical\": 0,\n","time":"2025-06-04T02:02:08.795361722Z","args":null}
+{"level":"info","pos":893,"out":"        \"High\": 0,\n","time":"2025-06-04T02:02:08.795452125Z","args":null}
+{"level":"info","pos":894,"out":"        \"Medium\": 6,\n","time":"2025-06-04T02:02:08.795465283Z","args":null}
+{"level":"info","pos":895,"out":"        \"Low\": 0,\n","time":"2025-06-04T02:02:08.795474978Z","args":null}
+{"level":"info","pos":896,"out":"        \"Info\": 0,\n","time":"2025-06-04T02:02:08.795484493Z","args":null}
+{"level":"info","pos":897,"out":"        \"Ignored\": 0,\n","time":"2025-06-04T02:02:08.795493954Z","args":null}
+{"level":"info","pos":898,"out":"        \"NewIgnoredCritical\": 0,\n","time":"2025-06-04T02:02:08.795505612Z","args":null}
+{"level":"info","pos":899,"out":"        \"NewIgnoredHigh\": 0,\n","time":"2025-06-04T02:02:08.795515708Z","args":null}
+{"level":"info","pos":900,"out":"        \"NewIgnoredMedium\": 0,\n","time":"2025-06-04T02:02:08.795526182Z","args":null}
+{"level":"info","pos":901,"out":"        \"NewIgnoredLow\": 0,\n","time":"2025-06-04T02:02:08.795535933Z","args":null}
+{"level":"info","pos":902,"out":"        \"NewIgnoredInfo\": 0,\n","time":"2025-06-04T02:02:08.79554542Z","args":null}
+{"level":"info","pos":903,"out":"        \"NewIgnoredUnassigned\": 0,\n","time":"2025-06-04T02:02:08.795559292Z","args":null}
+{"level":"info","pos":904,"out":"        \"IgnoredCritical\": 0,\n","time":"2025-06-04T02:02:08.79560612Z","args":null}
+{"level":"info","pos":905,"out":"        \"IgnoredHigh\": 0,\n","time":"2025-06-04T02:02:08.795616596Z","args":null}
+{"level":"info","pos":906,"out":"        \"IgnoredMedium\": 0,\n","time":"2025-06-04T02:02:08.79562624Z","args":null}
+{"level":"info","pos":907,"out":"        \"IgnoredLow\": 0,\n","time":"2025-06-04T02:02:08.795635396Z","args":null}
+{"level":"info","pos":908,"out":"        \"IgnoredInfo\": 0,\n","time":"2025-06-04T02:02:08.795644968Z","args":null}
+{"level":"info","pos":909,"out":"        \"IgnoredUnassigned\": 0,\n","time":"2025-06-04T02:02:08.79565527Z","args":null}
+{"level":"info","pos":910,"out":"        \"NewOccurrencesCritical\": 0,\n","time":"2025-06-04T02:02:08.795667131Z","args":null}
+{"level":"info","pos":911,"out":"        \"NewOccurrencesHigh\": 0,\n","time":"2025-06-04T02:02:08.79567734Z","args":null}
+{"level":"info","pos":912,"out":"        \"NewOccurrencesMedium\": 0,\n","time":"2025-06-04T02:02:08.795687823Z","args":null}
+{"level":"info","pos":913,"out":"        \"NewOccurrencesLow\": 0,\n","time":"2025-06-04T02:02:08.795697966Z","args":null}
+{"level":"info","pos":914,"out":"        \"NewOccurrencesInfo\": 0,\n","time":"2025-06-04T02:02:08.795707714Z","args":null}
+{"level":"info","pos":915,"out":"        \"NewOccurrencesUnassigned\": 0,\n","time":"2025-06-04T02:02:08.795717043Z","args":null}
+{"level":"info","pos":916,"out":"        \"NewIgnoredOccurrencesCritical\": 0,\n","time":"2025-06-04T02:02:08.795727434Z","args":null}
+{"level":"info","pos":917,"out":"        \"NewIgnoredOccurrencesHigh\": 0,\n","time":"2025-06-04T02:02:08.795737869Z","args":null}
+{"level":"info","pos":918,"out":"        \"NewIgnoredOccurrencesMedium\": 0,\n","time":"2025-06-04T02:02:08.795747915Z","args":null}
+{"level":"info","pos":919,"out":"        \"NewIgnoredOccurrencesLow\": 0,\n","time":"2025-06-04T02:02:08.795758163Z","args":null}
+{"level":"info","pos":920,"out":"        \"NewIgnoredOccurrencesInfo\": 0,\n","time":"2025-06-04T02:02:08.795768492Z","args":null}
+{"level":"info","pos":921,"out":"        \"NewIgnoredOccurrencesUnassigned\": 0\n","time":"2025-06-04T02:02:08.795780665Z","args":null}
+{"level":"info","pos":922,"out":"    }\n","time":"2025-06-04T02:02:08.79582175Z","args":null}
+{"level":"info","pos":923,"out":"}\n","time":"2025-06-04T02:02:08.795834433Z","args":null}
+{"level":"info","pos":924,"out":"fail_on_severity is set to none, but this threshold was not reached.\n","time":"2025-06-04T02:02:08.812717403Z","args":null}
+{"level":"info","pos":925,"out":"--------------------- STO Plugin [END] ---------------------\n","time":"2025-06-04T02:02:08.812744857Z","args":null}
